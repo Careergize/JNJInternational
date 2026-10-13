@@ -10,6 +10,8 @@ import AboutCompany from '../components/AboutCompany'
 import ContactSection from '../components/ContactSection'
 import Footer from '../components/Footer'
 import RFQModal from '../components/RFQModal'
+import ScrollProgressBar from '../components/ScrollProgressBar'
+import BackToTop from '../components/BackToTop'
 
 export const HomePage: React.FC = () => {
   const [rfqOpen, setRfqOpen] = useState(false)
@@ -27,6 +29,9 @@ export const HomePage: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#fafcf9] text-[#16271e] relative selection:bg-[#0d472d] selection:text-white">
+      {/* Top Scroll Progress Bar */}
+      <ScrollProgressBar />
+
       {/* Top Navbar */}
       <Navbar onOpenRFQ={handleOpenRFQ} />
 
@@ -59,6 +64,9 @@ export const HomePage: React.FC = () => {
 
       {/* Footer */}
       <Footer />
+
+      {/* Extice-style Floating Circular Back-to-Top Button */}
+      <BackToTop />
 
       {/* Interactive RFQ Modal */}
       <RFQModal

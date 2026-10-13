@@ -12,7 +12,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRFQ }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 15)
+      setIsScrolled(window.scrollY > 20)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -33,47 +33,47 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRFQ }) => {
       <nav
         className={`w-full transition-all duration-300 ${
           isScrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/70 py-3'
-            : 'bg-white/90 backdrop-blur-sm border-b border-slate-100 py-3.5'
+            ? 'bg-[#020b12]/95 backdrop-blur-xl shadow-xl shadow-black/40 border-b border-white/10 py-3'
+            : 'bg-[#020b12]/80 backdrop-blur-md border-b border-white/10 py-3.5'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-          {/* Brand Logo - Minimal and crisp */}
-          <a href="#home" className="flex items-center gap-2 group">
-            <JNJLogo size="sm" variant="light" />
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-8 flex items-center justify-between">
+          {/* Brand Logo (Matching GFS style clean emblem) */}
+          <a href="#home" className="flex items-center gap-2 group transition-transform duration-300 hover:scale-[1.02]">
+            <JNJLogo size="sm" variant="dark" />
           </a>
 
-          {/* Desktop Nav Links - Centered, minimal, airy */}
+          {/* Desktop Nav Links */}
           <div className="hidden lg:flex items-center gap-7">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-xs uppercase tracking-[0.14em] font-medium text-slate-600 hover:text-[#0b3d26] transition-colors"
+                className="text-xs uppercase tracking-[0.14em] font-medium text-slate-300 hover:text-[#f5d77f] transition-colors nav-link-hover py-1"
               >
                 {link.label}
               </a>
             ))}
           </div>
 
-          {/* Right Action: Clean WhatsApp & Request Quote Button */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Right Action: Clean WhatsApp & Get a Quote Pill Button (Matching Reference) */}
+          <div className="hidden md:flex items-center gap-4">
             <a
               href="https://wa.me/917994561627?text=Hello%20JNJ%20International%2C%20I%20would%20like%20to%20enquire%20about%20vegetable%20export%20rates."
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-500 hover:text-emerald-700 p-2 rounded-full hover:bg-slate-50 transition-colors"
+              className="text-slate-300 hover:text-emerald-400 p-2 rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110"
               title="Chat with Export Desk on WhatsApp"
             >
-              <MessageCircle className="size-4 text-emerald-700" />
+              <MessageCircle className="size-4 text-emerald-400" />
             </a>
 
             <button
               onClick={onOpenRFQ}
-              className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-[#0b3d26] hover:bg-[#072417] active:scale-95 rounded-full transition-all cursor-pointer shadow-sm"
+              className="extice-btn-primary btn-shimmer group inline-flex items-center gap-2 px-6 py-2.5 text-xs uppercase tracking-wider font-bold text-[#051c24] bg-[#e5a83b] hover:bg-[#d89726] rounded-full shadow-lg shadow-amber-500/20 cursor-pointer"
             >
-              <span>Request Quote</span>
-              <ArrowUpRight className="size-3.5 text-[#f5d77f]" />
+              <span>Get a Quote</span>
+              <ArrowUpRight className="size-3.5 text-[#051c24] arrow-slide" />
             </button>
           </div>
 
@@ -81,13 +81,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRFQ }) => {
           <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={onOpenRFQ}
-              className="px-3 py-1.5 text-xs font-semibold text-white bg-[#0b3d26] rounded-full"
+              className="px-3.5 py-1.5 text-xs font-bold text-[#051c24] bg-[#e5a83b] rounded-full shadow-sm"
             >
               Quote
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-1.5 text-slate-700 hover:text-[#0b3d26] rounded-md"
+              className="p-1.5 text-slate-200 hover:text-white rounded-md transition-colors"
               aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -97,16 +97,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRFQ }) => {
 
         {/* Mobile Dropdown Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-b border-slate-200 px-5 pt-3 pb-6 shadow-xl animate-in slide-in-from-top-2 duration-200">
+          <div className="lg:hidden bg-[#03131e]/98 backdrop-blur-2xl border-b border-white/15 px-6 pt-4 pb-6 shadow-2xl animate-in slide-in-from-top-2 duration-300 text-white">
             <div className="flex flex-col gap-2.5">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="py-2 text-sm font-medium text-slate-700 hover:text-[#0b3d26] border-b border-slate-50"
+                  className="py-2.5 text-sm font-medium text-slate-200 hover:text-[#f5d77f] border-b border-white/10 flex items-center justify-between"
                 >
-                  {link.label}
+                  <span>{link.label}</span>
+                  <ArrowUpRight className="size-3.5 text-slate-400" />
                 </a>
               ))}
 
@@ -116,9 +117,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRFQ }) => {
                     setMobileMenuOpen(false)
                     onOpenRFQ()
                   }}
-                  className="w-full py-2.5 text-xs font-semibold text-white bg-[#0b3d26] rounded-full shadow-sm"
+                  className="extice-btn-primary btn-shimmer w-full py-3 text-xs font-bold uppercase tracking-wider text-[#051c24] bg-[#e5a83b] rounded-full shadow-md"
                 >
-                  Request Formal Quote
+                  Get a Quote
                 </button>
                 <div className="text-center text-[10px] text-slate-400 pt-1 font-mono">
                   CIN U46301KL2026PTC104999 &bull; Mylakkara, Thiruvananthapuram

@@ -11,24 +11,26 @@ export const ProduceTicker: React.FC = () => {
   ]
 
   return (
-    <div className="bg-[#051a11] text-emerald-100 border-b border-emerald-900/50 py-2 overflow-hidden select-none text-xs">
+    <div className="bg-[#051a11] text-emerald-100 border-b border-emerald-900/50 py-2.5 overflow-hidden select-none text-xs relative">
       <div className="flex items-center">
-        {/* Minimal Static Tag */}
-        <div className="shrink-0 z-10 bg-[#051a11] px-4 flex items-center gap-2 border-r border-emerald-900/60 shadow-sm">
-          <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
+        {/* Minimal Static Tag with Radar Beacon */}
+        <div className="shrink-0 z-10 bg-[#051a11] px-4 flex items-center gap-2.5 border-r border-emerald-900/60 shadow-md">
+          <span className="size-2 rounded-full bg-[#d4af37] animate-beacon"></span>
           <span className="text-[10px] uppercase tracking-widest font-mono text-[#f5d77f] font-semibold whitespace-nowrap">
-            Export Desk
+            Live Export Desk
           </span>
         </div>
 
-        {/* Smooth Relaxed Ribbon */}
-        <div className="overflow-hidden flex-1 relative">
+        {/* Smooth Relaxed Ribbon with edge gradient mask */}
+        <div className="overflow-hidden flex-1 relative [mask-image:linear-gradient(to_right,transparent,black_30px,black_calc(100%-30px),transparent)]">
           <div className="animate-marquee flex items-center gap-10 py-0.5">
             {[...tickerItems, ...tickerItems].map((item, idx) => (
-              <div key={idx} className="flex items-center gap-2.5 whitespace-nowrap text-[11px]">
-                <span className="font-semibold text-white tracking-wide">{item.name}</span>
+              <div key={idx} className="flex items-center gap-2.5 whitespace-nowrap text-[11px] group cursor-default">
+                <span className="font-semibold text-white tracking-wide group-hover:text-[#f5d77f] transition-colors">
+                  {item.name}
+                </span>
                 <span className="text-emerald-300/70 font-mono text-[10px]">[{item.spec}]</span>
-                <span className="text-emerald-500/40 text-xs ml-3">&bull;</span>
+                <span className="text-[#d4af37]/60 text-xs ml-3">&bull;</span>
               </div>
             ))}
           </div>
