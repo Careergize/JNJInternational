@@ -13,9 +13,9 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenRFQ }) => {
   return (
-    <section id="home" className="relative bg-[#02120a] py-2.5 sm:py-6 lg:py-8 px-2 sm:px-5 lg:px-8 overflow-hidden select-none">
+    <section id="home" className="relative bg-[#0e3824] py-2.5 sm:py-6 lg:py-8 px-2 sm:px-5 lg:px-8 overflow-hidden select-none">
       {/* Outer Luxury Rounded Canvas (Matching Reference Frame) */}
-      <div className="max-w-[1440px] mx-auto relative rounded-2xl sm:rounded-[2.5rem] overflow-hidden border border-[#d4af37]/35 shadow-[0_25px_70px_-15px_rgba(0,0,0,0.85)] bg-[#031c11]">
+      <div className="max-w-[1440px] mx-auto relative rounded-2xl sm:rounded-[2.5rem] overflow-hidden border border-[#d4af37]/35 shadow-[0_25px_70px_-15px_rgba(10,40,26,0.55)] bg-[#13442d]">
         {/* Ocean & Container Vessel Panoramic Background */}
         <div className="absolute inset-0 z-0">
           <img
@@ -25,8 +25,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRFQ }) => {
             loading="eager"
           />
           {/* Directional Cinematic Overlays for Text Legibility & Emerald Depth */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#02140c]/95 via-[#031a10]/85 sm:via-[#031a10]/55 to-transparent pointer-events-none"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#02120a]/98 via-[#02120a]/30 to-[#031a10]/40 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0e3824]/92 via-[#12442c]/75 sm:via-[#12442c]/45 to-transparent pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0e3824]/92 via-[#0e3824]/20 to-[#12442c]/30 pointer-events-none"></div>
           {/* Subtle Ambient Radial Gold & Emerald Glows */}
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none"></div>
           <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-emerald-500/12 rounded-full blur-3xl pointer-events-none"></div>
@@ -47,7 +47,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRFQ }) => {
 
             {/* Quick Live Status Pill */}
             <ScrollReveal variant="fade-down" delay={150}>
-              <div className="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#051c24]/80 backdrop-blur-md border border-emerald-500/30 text-emerald-300 text-xs font-mono">
+              <div className="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#164f33]/85 backdrop-blur-md border border-emerald-500/30 text-emerald-300 text-xs font-mono">
                 <span className="size-1.5 rounded-full bg-emerald-400 animate-ping"></span>
                 <span>Active Sea Reefers &bull; Vizhinjam Seaport</span>
               </div>
@@ -96,7 +96,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRFQ }) => {
                   {/* Secondary Dark Glass Pill Button */}
                   <a
                     href="#products"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 text-xs uppercase tracking-wider font-semibold text-[#f5d77f] hover:text-white bg-[#062417]/75 hover:bg-[#062417] rounded-full border border-[#d4af37]/40 backdrop-blur-md shadow-md hover:border-[#d4af37]/80 cursor-pointer transition-all w-full sm:w-auto text-center"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-7 sm:py-3.5 text-xs uppercase tracking-wider font-semibold text-[#f5d77f] hover:text-white bg-[#1a5c3c]/85 hover:bg-[#1a5c3c] rounded-full border border-[#d4af37]/40 backdrop-blur-md shadow-md hover:border-[#d4af37]/80 cursor-pointer transition-all w-full sm:w-auto text-center"
                   >
                     <span>Explore Produce</span>
                   </a>
@@ -170,7 +170,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRFQ }) => {
           <div className="pt-8 sm:pt-14 grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 lg:gap-6 items-end">
             {/* Bottom-Left Floating Card: JNJ Reefer Produce Allocation */}
             <ScrollReveal variant="fade-up" delay={500}>
-              <div className="extice-card bg-[#052317]/90 backdrop-blur-xl border border-[#d4af37]/35 rounded-2xl p-3.5 sm:p-4.5 shadow-2xl flex items-center gap-3 sm:gap-4 max-w-md group">
+              <div className="extice-card bg-[#185839]/90 backdrop-blur-xl border border-[#d4af37]/35 rounded-2xl p-3.5 sm:p-4.5 shadow-2xl flex items-center gap-3 sm:gap-4 max-w-md group">
                 {/* 3D Yellow Shipping Container Image */}
                 <div className="relative size-14 sm:size-18 shrink-0 rounded-xl overflow-hidden bg-black/40 border border-white/10 flex items-center justify-center">
                   <img
@@ -202,7 +202,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRFQ }) => {
 
             {/* Bottom-Right Floating Card: Port Route & Voyage Tracker */}
             <ScrollReveal variant="fade-up" delay={550}>
-              <div className="extice-card bg-[#052317]/90 backdrop-blur-xl border border-[#d4af37]/35 rounded-2xl p-3.5 sm:p-5 shadow-2xl max-w-md sm:ml-auto w-full">
+              <div className="extice-card bg-[#185839]/90 backdrop-blur-xl border border-[#d4af37]/35 rounded-2xl p-3.5 sm:p-5 shadow-2xl max-w-md sm:ml-auto w-full">
                 {/* Route Header: Vizhinjam Seaport (TRV) -> Jebel Ali (DXB) */}
                 <div className="flex items-center justify-between gap-2 text-[11px] sm:text-xs font-mono font-bold text-white mb-2">
                   <div className="flex items-center gap-1.5 truncate">

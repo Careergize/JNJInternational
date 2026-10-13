@@ -88,7 +88,7 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onOpenRFQ }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mb-16">
             <ScrollReveal variant="fade-up" delay={50}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
                 <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
                 <span>5-Stage Inspection Protocol</span>
               </div>
@@ -121,18 +121,18 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onOpenRFQ }) => {
 
             {/* Third-Party Inspection Card */}
             <ScrollReveal variant="fade-up" delay={400}>
-              <div className="luxury-card-dark bg-gradient-to-br from-[#062417] to-[#03170e] text-white p-7 rounded-2xl border border-[#d4af37]/40 shadow-xl h-full flex flex-col justify-between">
+              <div className="luxury-card-dark bg-gradient-to-br from-[#1a5c3c] to-[#12442c] text-white p-7 rounded-2xl border border-[#d4af37]/40 shadow-xl h-full flex flex-col justify-between">
                 <div>
-                  <div className="size-10 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-4">
+                  <div className="size-10 rounded-xl bg-[#24764c] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-4">
                     <ClipboardList className="size-5 text-[#f5d77f]" />
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">Third-Party Inspections Welcome</h3>
-                  <p className="text-xs text-emerald-100/80 leading-relaxed font-normal">
+                  <p className="text-xs text-emerald-100/90 leading-relaxed font-normal">
                     We invite buyer-nominated international inspection agencies (such as <strong>SGS, Bureau Veritas, or Intertek</strong>)
                     to attend packhouse sorting and oversee container stuffing.
                   </p>
                 </div>
-                <div className="mt-5 pt-3 border-t border-emerald-900 text-[11px] font-mono text-[#f5d77f]">
+                <div className="mt-5 pt-3 border-t border-emerald-700/60 text-[11px] font-mono text-[#f5d77f]">
                   SGS / BUREAU VERITAS WELCOME
                 </div>
               </div>
@@ -146,7 +146,7 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onOpenRFQ }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <ScrollReveal variant="fade-up" delay={50}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
                 <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
                 <span>Government &amp; Statutory Registrations</span>
               </div>
@@ -164,7 +164,7 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onOpenRFQ }) => {
             {accreditations.map((acc, index) => (
               <ScrollReveal key={acc.agency} variant="fade-up" delay={index * 100}>
                 <div className="luxury-card-light p-6 sm:p-7 rounded-2xl flex items-start gap-4">
-                  <div className="size-12 rounded-2xl bg-gradient-to-br from-[#062417] to-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center shrink-0 shadow-md">
+                  <div className="size-12 rounded-2xl bg-gradient-to-br from-[#1a5c3c] to-[#24764c] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center shrink-0 shadow-md">
                     <Award className="size-6 text-[#f5d77f]" />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -180,12 +180,12 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onOpenRFQ }) => {
           </div>
 
           {/* Bottom CTA */}
-          <div className="mt-16 bg-[#03150e] rounded-3xl p-8 sm:p-10 text-white border border-[#d4af37]/40 shadow-2xl text-center max-w-3xl mx-auto">
+          <div className="mt-16 bg-[#12442c] rounded-3xl p-8 sm:p-10 text-white border border-[#d4af37]/40 shadow-2xl text-center max-w-3xl mx-auto">
             <ScrollReveal variant="fade-up" delay={150}>
               <h3 className="text-2xl font-bold font-heading mb-2 text-white">
                 Request a Sample Batch or Certificate of Analysis
               </h3>
-              <p className="text-xs sm:text-sm text-emerald-100/80 mb-6 max-w-xl mx-auto">
+              <p className="text-xs sm:text-sm text-emerald-100/90 mb-6 max-w-xl mx-auto">
                 We provide complete lab reports and phytosanitary certificate copies for your customs clearance teams
                 prior to vessel sailing.
               </p>

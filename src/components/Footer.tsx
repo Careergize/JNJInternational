@@ -1,13 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {
-  Phone,
-  Mail,
-  MapPin,
-  ArrowUp,
-  MessageCircle,
-} from 'lucide-react'
-import JNJLogo from './JNJLogo'
+import { ArrowUp, MessageCircle } from 'lucide-react'
 import ScrollReveal from './ScrollReveal'
 
 export const Footer: React.FC = () => {
@@ -16,167 +9,141 @@ export const Footer: React.FC = () => {
   }
 
   return (
-    <footer className="bg-[#03170e] text-emerald-100/80 border-t border-[#d4af37]/30 pt-16 pb-12 relative overflow-hidden">
+    <footer className="bg-[#12442c] text-emerald-100/70 border-t border-[#d4af37]/30 pt-12 pb-8 relative overflow-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#d4af37]/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-14 border-b border-emerald-900/60">
-          {/* Brand & Registry Col */}
-          <div className="lg:col-span-4 space-y-4">
-            <ScrollReveal variant="fade-up" delay={50}>
-              <Link to="/">
-                <JNJLogo size="md" variant="dark" />
+        {/* CRR-style Business Hours & Export Liaison Panel */}
+        <ScrollReveal variant="fade-up" delay={50}>
+          <div className="bg-[#185839] text-white p-5 sm:p-6 rounded-2xl border border-[#d4af37]/30 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-5 mb-10">
+            <div>
+              <strong className="block font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.08em] text-[#f5d77f] font-bold mb-1">
+                Business Hours
+              </strong>
+              <span className="text-xs sm:text-sm text-emerald-100/90 font-medium">
+                Mon &ndash; Sat: 8:00 AM &ndash; 9:00 PM IST
+              </span>
+            </div>
+
+            <div>
+              <strong className="block font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.08em] text-[#f5d77f] font-bold mb-1">
+                Export Desk
+              </strong>
+              <span className="text-xs sm:text-sm text-emerald-100/90 font-medium">
+                Responds within 24 hours on all international channels
+              </span>
+            </div>
+
+            <div>
+              <strong className="block font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.08em] text-[#f5d77f] font-bold mb-1">
+                Company &amp; Location
+              </strong>
+              <span className="text-xs sm:text-sm text-emerald-100/90 font-medium">
+                JNJ International Private Limited &bull; Thiruvananthapuram, Kerala
+              </span>
+            </div>
+
+            <div className="shrink-0">
+              <a
+                href="https://wa.me/917994561627?text=Hello%20JNJ%20International%2C%20I%20would%20like%20to%20enquire%20about%20export%20rates."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-[#e5a83b] via-[#d4af37] to-[#c59b27] hover:brightness-105 active:scale-95 text-[#041a10] text-xs font-bold shadow-md transition-all"
+              >
+                <MessageCircle className="size-3.5 text-[#041a10]" />
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* Footer Top: Brand (Left) + Horizontal Navigation Links (Right) */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 pb-7 border-b border-[#d4af37]/25">
+          {/* Brand Mark & Brand Word */}
+          <ScrollReveal variant="fade-up" delay={100}>
+            <Link to="/" className="flex items-center gap-3.5 group">
+              {/* Circular Emblem Mark with Gold Border & Ambient Glow */}
+              <div className="size-14 sm:size-15 rounded-full overflow-hidden flex items-center justify-center bg-white border-2 border-[#d4af37] shadow-[0_0_16px_rgba(212,175,55,0.35)] shrink-0 transition-transform duration-300 group-hover:scale-105">
+                <img
+                  src="/images/jnj-logo-emblem.png"
+                  alt="JNJ International Emblem"
+                  className="size-full object-contain p-1.5"
+                />
+              </div>
+
+              {/* Brand Word in Cinzel / Heading Serif with Gold Accents */}
+              <div className="flex flex-col leading-none">
+                <span className="font-heading font-bold text-xl sm:text-2xl tracking-[1.5px] text-[#f5d77f] uppercase drop-shadow-[0_0_8px_rgba(212,175,55,0.2)]">
+                  JNJ International
+                </span>
+                <small className="mt-1.5 font-sans text-[10px] sm:text-[11px] font-semibold tracking-[4px] text-[#d4af37] uppercase">
+                  Private Limited &mdash; Export House
+                </small>
+              </div>
+            </Link>
+          </ScrollReveal>
+
+          {/* Horizontal Navigation Links */}
+          <ScrollReveal variant="fade-up" delay={150}>
+            <nav className="flex items-center gap-4 sm:gap-6 md:gap-7 flex-wrap">
+              <Link
+                to="/"
+                className="text-xs sm:text-[13.5px] font-semibold text-emerald-100/85 hover:text-[#f5d77f] transition-colors"
+              >
+                Home
               </Link>
-              <p className="text-xs text-emerald-200/70 leading-relaxed pr-4 mt-3">
-                JNJ International Private Limited is an accredited Indian agricultural export house headquartered in
-                Thiruvananthapuram, Kerala. Specializing in high-volume, farm-gate aggregated fresh vegetables for global
-                wholesale distribution and maritime sea freight.
-              </p>
-
-              <div className="pt-2">
-                <div className="inline-block bg-[#052417] px-3.5 py-1.5 rounded-xl border border-[#d4af37]/40 text-[11px] font-mono text-[#f5d77f] shadow-sm">
-                  CIN: U46301KL2026PTC104999
-                </div>
-                <div className="text-[10px] text-emerald-400/80 mt-1">Registrar of Companies, Kerala, India</div>
-              </div>
-            </ScrollReveal>
-          </div>
-
-          {/* Quick Produce Links */}
-          <div className="lg:col-span-3 space-y-3">
-            <ScrollReveal variant="fade-up" delay={120}>
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#f5d77f] font-mono mb-3">
-                Export Produce Portfolio
-              </h4>
-              <ul className="space-y-2.5 text-xs">
-                <li>
-                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
-                    <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
-                    <span>Fresh Tomatoes (Roma &amp; Hybrid)</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
-                    <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
-                    <span>Nashik &amp; Southern Red Onions</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
-                    <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
-                    <span>Golden Table &amp; Processing Potatoes</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
-                    <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
-                    <span>G4 Green Chillies &amp; Ginger Roots</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
-                    <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
-                    <span>Mixed Reefer Container Shipments</span>
-                  </Link>
-                </li>
-              </ul>
-            </ScrollReveal>
-          </div>
-
-          {/* Quick Multipage Navigation & Logistics Hubs */}
-          <div className="lg:col-span-2 space-y-3">
-            <ScrollReveal variant="fade-up" delay={180}>
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#f5d77f] font-mono mb-3">
-                Corporate Pages
-              </h4>
-              <ul className="space-y-2 text-xs">
-                <li>
-                  <Link to="/about" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
-                    About JNJ International
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
-                    Produce Specifications
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/logistics" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
-                    Maritime Sea Logistics
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/quality" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
-                    Quality &amp; APEDA Standards
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
-                    Export Enquiry Desk
-                  </Link>
-                </li>
-              </ul>
-            </ScrollReveal>
-          </div>
-
-          {/* Contact & Desk Details */}
-          <div className="lg:col-span-3 space-y-3">
-            <ScrollReveal variant="fade-up" delay={240}>
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#f5d77f] font-mono mb-3">
-                Registered Head Office
-              </h4>
-              <div className="space-y-2.5 text-xs">
-                <div className="flex items-start gap-2">
-                  <MapPin className="size-4 text-[#d4af37] shrink-0 mt-0.5" />
-                  <span className="leading-relaxed">
-                    No.13/602 Manjadimoodu, Mylakkara,
-                    <br />
-                    Thiruvananthapuram, Kerala &ndash; 695572
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <Phone className="size-4 text-[#d4af37] shrink-0" />
-                  <span>+91 7994561627 / 9961810692</span>
-                </div>
-
-                <div className="flex items-center gap-2 truncate">
-                  <Mail className="size-4 text-[#d4af37] shrink-0" />
-                  <span className="truncate">jnj.internationalpvt@gmail.com</span>
-                </div>
-
-                <div className="pt-2">
-                  <a
-                    href="https://wa.me/917994561627"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#052417] hover:bg-[#07301f] text-[#f5d77f] hover:text-white text-[11px] font-semibold border border-[#d4af37]/40 shadow-sm transition-all hover:scale-105"
-                  >
-                    <MessageCircle className="size-3.5 text-[#d4af37]" />
-                    <span>Chat on WhatsApp Export Desk</span>
-                  </a>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
+              <Link
+                to="/about"
+                className="text-xs sm:text-[13.5px] font-semibold text-emerald-100/85 hover:text-[#f5d77f] transition-colors"
+              >
+                About Us
+              </Link>
+              <Link
+                to="/products"
+                className="text-xs sm:text-[13.5px] font-semibold text-emerald-100/85 hover:text-[#f5d77f] transition-colors"
+              >
+                Products &amp; Services
+              </Link>
+              <Link
+                to="/logistics"
+                className="text-xs sm:text-[13.5px] font-semibold text-emerald-100/85 hover:text-[#f5d77f] transition-colors"
+              >
+                Maritime Logistics
+              </Link>
+              <Link
+                to="/quality"
+                className="text-xs sm:text-[13.5px] font-semibold text-emerald-100/85 hover:text-[#f5d77f] transition-colors"
+              >
+                Quality Standards
+              </Link>
+              <Link
+                to="/contact"
+                className="text-xs sm:text-[13.5px] font-semibold text-emerald-100/85 hover:text-[#f5d77f] transition-colors"
+              >
+                Contact Us
+              </Link>
+            </nav>
+          </ScrollReveal>
         </div>
 
-        {/* Bottom Strip */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-emerald-300/60 text-center sm:text-left">
+        {/* Footer Bottom Strip: Copyright & Location */}
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] sm:text-xs text-emerald-200/65 text-center sm:text-left">
           <div>
             &copy; {new Date().getFullYear()} <strong>JNJ INTERNATIONAL PRIVATE LIMITED</strong>. All Rights Reserved.
-            <span className="block sm:inline sm:ml-1">CIN: U46301KL2026PTC104999.</span>
+            <span className="block sm:inline sm:ml-2 text-emerald-400/80 font-normal">
+              CIN: U46301KL2026PTC104999 &bull; RoC Kerala
+            </span>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+          <div className="flex items-center gap-6">
             <span>Thiruvananthapuram, Kerala, India</span>
             <button
               onClick={scrollToTop}
-              className="inline-flex items-center gap-1.5 text-emerald-200 hover:text-[#f5d77f] transition-all cursor-pointer group hover:-translate-y-0.5"
+              className="inline-flex items-center gap-1.5 text-emerald-200 hover:text-[#f5d77f] transition-colors cursor-pointer group"
             >
               <span>Back to Top</span>
-              <ArrowUp className="size-3.5 transition-transform group-hover:-translate-y-1" />
+              <ArrowUp className="size-3.5 transition-transform group-hover:-translate-y-1 text-[#d4af37]" />
             </button>
           </div>
         </div>

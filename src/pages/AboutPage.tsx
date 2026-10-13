@@ -68,7 +68,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenRFQ }) => {
       <AboutCompany />
 
       {/* 3. Detailed Strategic Gateway: The Vizhinjam Port Advantage */}
-      <section className="py-20 bg-[#03150e] text-white relative overflow-hidden border-y border-[#d4af37]/25">
+      <section className="py-20 bg-[#12442c] text-white relative overflow-hidden border-y border-[#d4af37]/25">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
@@ -80,7 +80,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenRFQ }) => {
               <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-white mb-4">
                 Positioned at the Crossroads of Global Maritime Trade
               </h2>
-              <p className="text-sm sm:text-base text-emerald-100/80 leading-relaxed font-normal">
+              <p className="text-sm sm:text-base text-emerald-100/90 leading-relaxed font-normal">
                 Our head office and dispatch packhouses in Thiruvananthapuram are situated just 25 kilometers from
                 India&apos;s first mega transshipment deepwater container port, Vizhinjam Seaport, and 15 kilometers
                 from Trivandrum International Airport.
@@ -90,54 +90,54 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenRFQ }) => {
 
           <div className="grid md:grid-cols-3 gap-6">
             <ScrollReveal variant="fade-up" delay={100}>
-              <div className="luxury-card-dark bg-[#062417]/85 border-[#d4af37]/35 p-7 rounded-2xl h-full flex flex-col justify-between">
+              <div className="luxury-card-dark bg-[#1a5c3c]/90 border-[#d4af37]/35 p-7 rounded-2xl h-full flex flex-col justify-between">
                 <div>
-                  <div className="size-12 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-5">
+                  <div className="size-12 rounded-xl bg-[#24764c] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-5">
                     <Ship className="size-6 text-[#f5d77f]" />
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">Vizhinjam Deepwater Seaport</h3>
-                  <p className="text-xs text-emerald-100/75 leading-relaxed">
+                  <p className="text-xs text-emerald-100/85 leading-relaxed">
                     Just 25 km from our dispatch gates. Natural 20-meter draft permits direct berthing of mother container
                     vessels, eliminating feeder delays and transit penalties via Sri Lanka.
                   </p>
                 </div>
-                <div className="mt-5 pt-4 border-t border-emerald-800/80 text-[11px] font-mono text-[#f5d77f]">
+                <div className="mt-5 pt-4 border-t border-emerald-700/60 text-[11px] font-mono text-[#f5d77f]">
                   25 KM &bull; 40-MINUTE REEFER DRAYAGE
                 </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal variant="fade-up" delay={180}>
-              <div className="luxury-card-dark bg-[#062417]/85 border-[#d4af37]/35 p-7 rounded-2xl h-full flex flex-col justify-between">
+              <div className="luxury-card-dark bg-[#1a5c3c]/90 border-[#d4af37]/35 p-7 rounded-2xl h-full flex flex-col justify-between">
                 <div>
-                  <div className="size-12 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-5">
+                  <div className="size-12 rounded-xl bg-[#24764c] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-5">
                     <Plane className="size-6 text-[#f5d77f]" />
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">Trivandrum International Airport</h3>
-                  <p className="text-xs text-emerald-100/75 leading-relaxed">
+                  <p className="text-xs text-emerald-100/85 leading-relaxed">
                     15 km to TRV Air Cargo Complex. Daily wide-body direct flights to Dubai, Doha, Abu Dhabi, Muscat, and
                     Kuwait enable same-day delivery of ultra-perishable produce like premium green chillies.
                   </p>
                 </div>
-                <div className="mt-5 pt-4 border-t border-emerald-800/80 text-[11px] font-mono text-[#f5d77f]">
+                <div className="mt-5 pt-4 border-t border-emerald-700/60 text-[11px] font-mono text-[#f5d77f]">
                   15 KM &bull; SAME-DAY AIR CARGO
                 </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal variant="fade-up" delay={260}>
-              <div className="luxury-card-dark bg-[#062417]/85 border-[#d4af37]/35 p-7 rounded-2xl h-full flex flex-col justify-between">
+              <div className="luxury-card-dark bg-[#1a5c3c]/90 border-[#d4af37]/35 p-7 rounded-2xl h-full flex flex-col justify-between">
                 <div>
-                  <div className="size-12 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-5">
+                  <div className="size-12 rounded-xl bg-[#24764c] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-5">
                     <Building2 className="size-6 text-[#f5d77f]" />
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">Cochin &amp; Tuticorin Access</h3>
-                  <p className="text-xs text-emerald-100/75 leading-relaxed">
+                  <p className="text-xs text-emerald-100/85 leading-relaxed">
                     Seamless access via National Highway corridor to Vallarpadam International Container Transshipment
                     Terminal (ICTT Cochin) and V.O. Chidambaranar Port (Tuticorin) for multi-corridor route resilience.
                   </p>
                 </div>
-                <div className="mt-5 pt-4 border-t border-emerald-800/80 text-[11px] font-mono text-[#f5d77f]">
+                <div className="mt-5 pt-4 border-t border-emerald-700/60 text-[11px] font-mono text-[#f5d77f]">
                   MULTI-PORT FLEXIBILITY &bull; ZERO BOTTLENECK
                 </div>
               </div>
@@ -151,7 +151,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenRFQ }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <ScrollReveal variant="fade-up" delay={50}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
                 <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
                 <span>Our Operational Foundation</span>
               </div>
@@ -172,7 +172,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenRFQ }) => {
                 <ScrollReveal key={pil.title} variant="fade-up" delay={idx * 100}>
                   <div className="luxury-card-light p-8 rounded-2xl h-full flex flex-col justify-between">
                     <div>
-                      <div className="size-13 rounded-2xl bg-gradient-to-br from-[#062417] to-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center mb-5 shadow-md">
+                      <div className="size-13 rounded-2xl bg-gradient-to-br from-[#1a5c3c] to-[#24764c] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center mb-5 shadow-md">
                         <Icon className="size-6.5 text-[#f5d77f]" />
                       </div>
                       <h3 className="text-xl font-bold text-slate-900 mb-3">{pil.title}</h3>
@@ -191,7 +191,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenRFQ }) => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <ScrollReveal variant="fade-up" delay={50}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
                 <FileText className="size-3.5 text-[#d4af37]" />
                 <span>OFFICIAL CORPORATE DOSSIER</span>
               </div>

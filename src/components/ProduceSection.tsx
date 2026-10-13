@@ -187,7 +187,7 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <ScrollReveal variant="fade-down" delay={50}>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-4 shadow-sm">
               <BadgeCheck className="size-3.5 text-[#d4af37]" />
               <span>APEDA Certified &bull; Farm-Direct Aggregation</span>
             </div>
@@ -243,8 +243,8 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
                     onClick={() => setActiveTab(tab.key as any)}
                     className={`px-3 py-1.5 sm:px-4 sm:py-2 text-[11px] sm:text-xs font-semibold rounded-full transition-all duration-300 flex items-center gap-1.5 sm:gap-2 cursor-pointer ${
                       isActive
-                        ? 'bg-gradient-to-r from-[#062417] to-[#0a3824] text-[#f5d77f] shadow-md shadow-emerald-950/20 ring-1 ring-[#d4af37]/50 scale-[1.02]'
-                        : 'text-slate-600 hover:text-[#062417] hover:bg-emerald-50/50'
+                        ? 'bg-gradient-to-r from-[#1a5c3c] to-[#24764c] text-[#f5d77f] shadow-md shadow-emerald-950/20 ring-1 ring-[#d4af37]/50 scale-[1.02]'
+                        : 'text-slate-600 hover:text-[#185839] hover:bg-emerald-50/50'
                     }`}
                   >
                     <span>{tab.label}</span>
@@ -285,11 +285,11 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
                       loading="lazy"
                     />
                     {/* Cinematic gradient vignette */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#041a10] via-black/35 to-black/15 pointer-events-none transition-opacity duration-500 group-hover:opacity-90"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#12442c] via-black/35 to-black/15 pointer-events-none transition-opacity duration-500 group-hover:opacity-90"></div>
 
                     {/* Top Badges Row */}
                     <div className="absolute top-3 sm:top-4 left-3 sm:left-4 right-3 sm:right-4 z-10 flex flex-wrap items-center justify-between gap-2 pointer-events-none">
-                      <span className="text-[9px] sm:text-xs font-mono font-bold tracking-wider px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-[#051f14]/90 text-[#f5d77f] border border-[#d4af37]/40 shadow-md backdrop-blur-md inline-flex items-center gap-1 sm:gap-1.5 pointer-events-auto max-w-[65%] sm:max-w-none truncate">
+                      <span className="text-[9px] sm:text-xs font-mono font-bold tracking-wider px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-[#12442c]/90 text-[#f5d77f] border border-[#d4af37]/40 shadow-md backdrop-blur-md inline-flex items-center gap-1 sm:gap-1.5 pointer-events-auto max-w-[65%] sm:max-w-none truncate">
                         <BadgeCheck className="size-3 text-[#f5d77f] shrink-0" />
                         <span className="truncate">{item.badge}</span>
                       </span>
@@ -413,7 +413,7 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
                         <div className="space-y-4 mb-6 animate-in fade-in duration-300">
                           {/* Packaging Options */}
                           <div className="bg-[#f7faf5] p-3.5 rounded-2xl border border-emerald-900/10">
-                            <span className="text-[10px] font-mono uppercase tracking-wider text-[#0b3d26] font-bold mb-2 flex items-center gap-1.5">
+                            <span className="text-[10px] font-mono uppercase tracking-wider text-[#185839] font-bold mb-2 flex items-center gap-1.5">
                               <Package className="size-3.5 text-[#d4af37]" />
                               Available Export Packaging
                             </span>
@@ -491,7 +491,7 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
 
         {/* Bottom Banner: Custom Export Enquiries */}
         <ScrollReveal variant="fade-up" delay={200}>
-          <div className="mt-16 bg-gradient-to-r from-[#062417] via-[#0b3823] to-[#041910] text-white rounded-3xl p-8 sm:p-10 border border-[#d4af37]/40 shadow-2xl relative overflow-hidden extice-card">
+          <div className="mt-16 bg-gradient-to-r from-[#1a5c3c] via-[#24764c] to-[#12442c] text-white rounded-3xl p-8 sm:p-10 border border-[#d4af37]/40 shadow-2xl relative overflow-hidden extice-card">
             <div className="absolute top-0 right-0 w-80 h-80 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
 
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -543,7 +543,7 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
             </button>
 
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-[10px] font-mono font-bold tracking-wider px-3 py-1 rounded-full bg-[#051f14] text-[#f5d77f]">
+              <span className="text-[10px] font-mono font-bold tracking-wider px-3 py-1 rounded-full bg-[#185839] text-[#f5d77f]">
                 {detailModalItem.badge}
               </span>
               <span className="text-xs text-slate-500 font-mono">
@@ -605,7 +605,7 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
                   setDetailModalItem(null)
                   onOpenRFQ(detailModalItem.name)
                 }}
-                className="extice-btn-primary btn-shimmer px-6 py-2.5 rounded-full bg-[#0b3823] hover:bg-[#072417] text-white text-xs font-semibold shadow-md cursor-pointer"
+                className="extice-btn-primary btn-shimmer px-6 py-2.5 rounded-full bg-[#185839] hover:bg-[#206d47] text-white text-xs font-semibold shadow-md cursor-pointer"
               >
                 Request Rate for this Produce
               </button>

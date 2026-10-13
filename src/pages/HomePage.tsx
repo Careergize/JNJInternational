@@ -9,7 +9,6 @@ import {
   ThermometerSnowflake,
   MessageCircle,
   FileSpreadsheet,
-  Sparkles,
 } from 'lucide-react'
 import Hero from '../components/Hero'
 import ScrollReveal from '../components/ScrollReveal'
@@ -81,7 +80,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
       <Hero onOpenRFQ={() => onOpenRFQ()} />
 
       {/* 2. Specialized Multipage Portfolios Feature Strip */}
-      <section className="bg-[#03170e] text-white py-10 sm:py-12 px-4 sm:px-6 border-y border-[#d4af37]/35 relative">
+      <section className="bg-[#13472f] text-white py-10 sm:py-12 px-4 sm:px-6 border-y border-[#d4af37]/35 relative">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="h-px w-8 bg-gradient-to-r from-transparent to-[#d4af37]"></span>
@@ -94,9 +93,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6">
             <Link
               to="/about"
-              className="p-5 rounded-2xl bg-gradient-to-br from-[#062518]/90 to-[#041910]/95 border border-[#d4af37]/25 hover:border-[#d4af37]/75 hover:shadow-xl hover:shadow-black/50 transition-all duration-400 group"
+              className="p-5 rounded-2xl bg-gradient-to-br from-[#1b5d3d]/90 to-[#12442c]/95 border border-[#d4af37]/25 hover:border-[#d4af37]/75 hover:shadow-xl hover:shadow-black/50 transition-all duration-400 group"
             >
-              <div className="size-11 rounded-xl bg-[#083320] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+              <div className="size-11 rounded-xl bg-[#206d47] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                 <Award className="size-5 text-[#f5d77f]" />
               </div>
               <h4 className="font-bold text-sm sm:text-base text-white group-hover:text-[#f5d77f] transition-colors flex items-center justify-between">
@@ -110,9 +109,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
 
             <Link
               to="/products"
-              className="p-5 rounded-2xl bg-gradient-to-br from-[#062518]/90 to-[#041910]/95 border border-[#d4af37]/25 hover:border-[#d4af37]/75 hover:shadow-xl hover:shadow-black/50 transition-all duration-400 group"
+              className="p-5 rounded-2xl bg-gradient-to-br from-[#1b5d3d]/90 to-[#12442c]/95 border border-[#d4af37]/25 hover:border-[#d4af37]/75 hover:shadow-xl hover:shadow-black/50 transition-all duration-400 group"
             >
-              <div className="size-11 rounded-xl bg-[#083320] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+              <div className="size-11 rounded-xl bg-[#206d47] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                 <CheckCircle2 className="size-5 text-[#f5d77f]" />
               </div>
               <h4 className="font-bold text-sm sm:text-base text-white group-hover:text-[#f5d77f] transition-colors flex items-center justify-between">
@@ -126,9 +125,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
 
             <Link
               to="/logistics"
-              className="p-5 rounded-2xl bg-gradient-to-br from-[#062518]/90 to-[#041910]/95 border border-[#d4af37]/25 hover:border-[#d4af37]/75 hover:shadow-xl hover:shadow-black/50 transition-all duration-400 group"
+              className="p-5 rounded-2xl bg-gradient-to-br from-[#1b5d3d]/90 to-[#12442c]/95 border border-[#d4af37]/25 hover:border-[#d4af37]/75 hover:shadow-xl hover:shadow-black/50 transition-all duration-400 group"
             >
-              <div className="size-11 rounded-xl bg-[#083320] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+              <div className="size-11 rounded-xl bg-[#206d47] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                 <Ship className="size-5 text-[#f5d77f]" />
               </div>
               <h4 className="font-bold text-sm sm:text-base text-white group-hover:text-[#f5d77f] transition-colors flex items-center justify-between">
@@ -142,9 +141,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
 
             <Link
               to="/quality"
-              className="p-5 rounded-2xl bg-gradient-to-br from-[#062518]/90 to-[#041910]/95 border border-[#d4af37]/25 hover:border-[#d4af37]/75 hover:shadow-xl hover:shadow-black/50 transition-all duration-400 group"
+              className="p-5 rounded-2xl bg-gradient-to-br from-[#1b5d3d]/90 to-[#12442c]/95 border border-[#d4af37]/25 hover:border-[#d4af37]/75 hover:shadow-xl hover:shadow-black/50 transition-all duration-400 group"
             >
-              <div className="size-11 rounded-xl bg-[#083320] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+              <div className="size-11 rounded-xl bg-[#206d47] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                 <ShieldCheck className="size-5 text-[#f5d77f]" />
               </div>
               <h4 className="font-bold text-sm sm:text-base text-white group-hover:text-[#f5d77f] transition-colors flex items-center justify-between">
@@ -165,8 +164,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <div>
               <ScrollReveal variant="fade-down" delay={50}>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
-                  <Sparkles className="size-3.5 text-[#d4af37]" />
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+                  <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
                   <span>Flagship Agricultural Commodities</span>
                 </div>
               </ScrollReveal>
@@ -183,7 +182,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
             <ScrollReveal variant="fade-left" delay={200}>
               <Link
                 to="/products"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#052417] text-[#f5d77f] hover:text-white border border-[#d4af37]/40 text-xs font-bold shadow-md hover:bg-[#073321] transition-all group shrink-0"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#185839] text-[#f5d77f] hover:text-white border border-[#d4af37]/40 text-xs font-bold shadow-md hover:bg-[#206d47] transition-all group shrink-0"
               >
                 <span>View Full Catalog &amp; Specs</span>
                 <ArrowRight className="size-4 text-[#d4af37] group-hover:translate-x-1 transition-transform" />
@@ -202,7 +201,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                    <div className="absolute top-3 left-3 bg-[#03180f]/90 text-[#f5d77f] text-[10px] font-mono font-bold px-2.5 py-1 rounded-md border border-[#d4af37]/40 backdrop-blur-sm">
+                    <div className="absolute top-3 left-3 bg-[#12442c]/90 text-[#f5d77f] text-[10px] font-mono font-bold px-2.5 py-1 rounded-md border border-[#d4af37]/40 backdrop-blur-sm">
                       {item.badge}
                     </div>
                     <div className="absolute bottom-3 left-3 right-3 text-white">
@@ -255,14 +254,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
       </section>
 
       {/* 4. Strategic Maritime Gateway Teaser (High-Impact Dark Emerald Banner) */}
-      <section className="py-16 sm:py-20 bg-[#03150e] text-white relative overflow-hidden border-b border-[#d4af37]/25">
+      <section className="py-16 sm:py-20 bg-[#12442c] text-white relative overflow-hidden border-b border-[#d4af37]/25">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="luxury-card-dark bg-gradient-to-br from-[#062518]/95 via-[#083523]/90 to-[#041910] p-6 sm:p-10 rounded-3xl border border-[#d4af37]/35 shadow-2xl">
+          <div className="luxury-card-dark bg-gradient-to-br from-[#1b5d3d]/95 via-[#22724a]/90 to-[#144930] p-6 sm:p-10 rounded-3xl border border-[#d4af37]/35 shadow-2xl">
             <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               <div className="lg:col-span-7">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#03170e]/80 border border-[#d4af37]/40 text-[#f5d77f] text-xs font-mono uppercase mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#12442c]/80 border border-[#d4af37]/40 text-[#f5d77f] text-xs font-mono uppercase mb-4">
                   <Ship className="size-3.5 text-[#d4af37]" />
                   <span>Strategic Maritime Gateway</span>
                 </div>
@@ -285,7 +284,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
                   </Link>
                   <Link
                     to="/about"
-                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#041a10] hover:bg-[#072a1b] text-emerald-200 hover:text-white border border-[#d4af37]/30 text-xs font-semibold transition-all"
+                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#10402a] hover:bg-[#185839] text-emerald-100 hover:text-white border border-[#d4af37]/30 text-xs font-semibold transition-all"
                   >
                     <span>About Corporate Registry</span>
                   </Link>
@@ -294,28 +293,28 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
 
               {/* 4 Stat Highlights */}
               <div className="lg:col-span-5 grid grid-cols-2 gap-3.5 sm:gap-4">
-                <div className="bg-[#031c11]/85 p-4 sm:p-5 rounded-2xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
+                <div className="bg-[#10402a]/90 p-4 sm:p-5 rounded-2xl border border-emerald-700/60 hover:border-[#d4af37]/40 transition-colors">
                   <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#f5d77f]">25 KM</div>
                   <div className="text-xs font-semibold text-white mt-1">Packhouse to Berth</div>
-                  <div className="text-[11px] text-emerald-300/70 mt-0.5">Under 40-min drayage</div>
+                  <div className="text-[11px] text-emerald-200/80 mt-0.5">Under 40-min drayage</div>
                 </div>
 
-                <div className="bg-[#031c11]/85 p-4 sm:p-5 rounded-2xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
+                <div className="bg-[#10402a]/90 p-4 sm:p-5 rounded-2xl border border-emerald-700/60 hover:border-[#d4af37]/40 transition-colors">
                   <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#f5d77f]">3 - 4 DAYS</div>
                   <div className="text-xs font-semibold text-white mt-1">Transit to Jebel Ali</div>
-                  <div className="text-[11px] text-emerald-300/70 mt-0.5">Direct ocean passage</div>
+                  <div className="text-[11px] text-emerald-200/80 mt-0.5">Direct ocean passage</div>
                 </div>
 
-                <div className="bg-[#031c11]/85 p-4 sm:p-5 rounded-2xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
+                <div className="bg-[#10402a]/90 p-4 sm:p-5 rounded-2xl border border-emerald-700/60 hover:border-[#d4af37]/40 transition-colors">
                   <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#f5d77f]">+2° to +12°C</div>
                   <div className="text-xs font-semibold text-white mt-1">Reefer Precision</div>
-                  <div className="text-[11px] text-emerald-300/70 mt-0.5">Micro-climate control</div>
+                  <div className="text-[11px] text-emerald-200/80 mt-0.5">Micro-climate control</div>
                 </div>
 
-                <div className="bg-[#031c11]/85 p-4 sm:p-5 rounded-2xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
+                <div className="bg-[#10402a]/90 p-4 sm:p-5 rounded-2xl border border-emerald-700/60 hover:border-[#d4af37]/40 transition-colors">
                   <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#f5d77f]">100%</div>
                   <div className="text-xs font-semibold text-white mt-1">Traceability</div>
-                  <div className="text-[11px] text-emerald-300/70 mt-0.5">APEDA audited logs</div>
+                  <div className="text-[11px] text-emerald-200/80 mt-0.5">APEDA audited logs</div>
                 </div>
               </div>
             </div>
@@ -334,7 +333,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
                   key={idx}
                   className="luxury-card-light p-4 rounded-xl flex items-center gap-3.5"
                 >
-                  <div className="size-10 rounded-lg bg-[#052417] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
+                  <div className="size-10 rounded-lg bg-[#185839] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
                     <Icon className="size-5 text-[#f5d77f]" />
                   </div>
                   <div>
@@ -359,7 +358,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
       </section>
 
       {/* 6. Quick RFQ & Commercial Desk Callout */}
-      <section className="py-16 sm:py-20 bg-[#03150e] text-white relative overflow-hidden">
+      <section className="py-16 sm:py-20 bg-[#12442c] text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center max-w-3xl">
           <ScrollReveal variant="fade-down" delay={50}>
             <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#f5d77f] font-semibold block mb-2">
@@ -389,7 +388,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenRFQ }) => {
                 href="https://wa.me/917994561627?text=Hello%20JNJ%20International%2C%20I%20would%20like%20to%20enquire%20about%20vegetable%20export%20rates."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#062417] hover:bg-[#083321] text-[#f5d77f] hover:text-white border border-[#d4af37]/40 text-xs font-semibold shadow-md transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#1a5c3c] hover:bg-[#206d47] text-[#f5d77f] hover:text-white border border-[#d4af37]/40 text-xs font-semibold shadow-md transition-all"
               >
                 <MessageCircle className="size-4 text-[#d4af37]" />
                 <span>WhatsApp Trade Desk</span>

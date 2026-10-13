@@ -45,7 +45,7 @@ export const ContactSection: React.FC = () => {
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <ScrollReveal variant="fade-down" delay={50}>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
               <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
               <span>Direct Export &amp; Wholesale Desk</span>
             </div>
@@ -85,7 +85,7 @@ export const ContactSection: React.FC = () => {
                 <span className="text-[11px] font-mono uppercase tracking-wider text-emerald-700 font-semibold block mb-1">
                   Instant Chat Desk
                 </span>
-                <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#0b3d26] transition-colors">
+                <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#12442c] transition-colors">
                   WhatsApp Business
                 </h3>
                 <p className="text-xs text-slate-600 mb-4">Direct priority chat with export logistics officer.</p>
@@ -107,7 +107,7 @@ export const ContactSection: React.FC = () => {
                 <span className="text-[11px] font-mono uppercase tracking-wider text-emerald-700 font-semibold block mb-1">
                   Voice Hotlines
                 </span>
-                <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#0b3d26] transition-colors">
+                <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#12442c] transition-colors">
                   Call Export Desk
                 </h3>
                 <p className="text-xs text-slate-600 mb-4">Operating during business hours for immediate verbal support.</p>
@@ -136,7 +136,7 @@ export const ContactSection: React.FC = () => {
                 <span className="text-[11px] font-mono uppercase tracking-wider text-emerald-700 font-semibold block mb-1">
                   Formal Inquiries
                 </span>
-                <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#0b3d26] transition-colors">
+                <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#12442c] transition-colors">
                   Official Email
                 </h3>
                 <p className="text-xs text-slate-600 mb-4">Send tender documents, RFQ sheets, and contracts.</p>
@@ -158,7 +158,7 @@ export const ContactSection: React.FC = () => {
                 <span className="text-[11px] font-mono uppercase tracking-wider text-emerald-700 font-semibold block mb-1">
                   Registered Office
                 </span>
-                <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#0b3d26] transition-colors">
+                <h3 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#12442c] transition-colors">
                   Thiruvananthapuram
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed mb-4">
@@ -290,7 +290,7 @@ export const ContactSection: React.FC = () => {
           {/* Right: Operating Hours & Logistics Desk Notice */}
           <div className="lg:col-span-5 space-y-6">
             <ScrollReveal variant="fade-left" delay={250}>
-              <div className="luxury-card-dark bg-gradient-to-br from-[#062417] to-[#03170e] text-white p-6 sm:p-7 rounded-3xl border border-[#d4af37]/35 shadow-xl">
+              <div className="luxury-card-dark bg-gradient-to-br from-[#1a5c3c] to-[#13472f] text-white p-6 sm:p-7 rounded-3xl border border-[#d4af37]/35 shadow-xl">
                 <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#f5d77f] mb-3">
                   <Clock className="size-4" />
                   Export Desk Hours &amp; Reefer Support
@@ -322,14 +322,14 @@ export const ContactSection: React.FC = () => {
             <ScrollReveal variant="fade-left" delay={350}>
               <div className="luxury-card-light p-6 rounded-3xl text-xs text-slate-600 space-y-2">
                 <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
-                  <Building className="size-4 text-[#0d472d]" />
+                  <Building className="size-4 text-[#185839]" />
                   Visiting Our Thiruvananthapuram Office
                 </div>
                 <p className="leading-relaxed">
                   Overseas procurement teams and domestic mandi buyers are welcome to visit our administrative facilities
                   in Mylakkara, Thiruvananthapuram, Kerala, to inspect cold rooms and review active packing operations.
                 </p>
-                <div className="pt-2 text-[11px] font-mono text-[#0b3d26] font-semibold">
+                <div className="pt-2 text-[11px] font-mono text-[#185839] font-semibold">
                   Appointments: +91 7994561627 / jnj.internationalpvt@gmail.com
                 </div>
               </div>

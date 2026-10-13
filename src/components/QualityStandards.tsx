@@ -45,7 +45,7 @@ export const QualityStandards: React.FC = () => {
           {/* Left Column: Certifications & Quality Commitment */}
           <div className="lg:col-span-6">
             <ScrollReveal variant="fade-down" delay={50}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
                 <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
                 <span>APEDA Standards &bull; Laboratory Audited</span>
               </div>
@@ -74,8 +74,8 @@ export const QualityStandards: React.FC = () => {
                   <div className="luxury-card-light p-5 rounded-2xl h-full flex flex-col justify-between group">
                     <div>
                       <div className="flex items-center gap-2 mb-2">
-                        <BadgeCheck className="size-5 text-[#0d472d] group-hover:text-[#d4af37] group-hover:scale-110 transition-all duration-300" />
-                        <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#0b3d26] transition-colors">{cert.title}</h3>
+                        <BadgeCheck className="size-5 text-[#185839] group-hover:text-[#d4af37] group-hover:scale-110 transition-all duration-300" />
+                        <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#12442c] transition-colors">{cert.title}</h3>
                       </div>
                       <div className="text-[11px] font-mono font-medium text-[#b38b2d] mb-1.5">{cert.subtitle}</div>
                       <p className="text-xs text-slate-600 leading-relaxed">{cert.desc}</p>
@@ -89,7 +89,7 @@ export const QualityStandards: React.FC = () => {
           {/* Right Column: Technical Quality Matrix */}
           <div className="lg:col-span-6">
             <ScrollReveal variant="fade-left" delay={200} duration={850}>
-              <div className="bg-[#062417] text-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 border border-[#d4af37]/40 shadow-2xl relative overflow-hidden extice-card">
+              <div className="bg-[#185839] text-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 border border-[#d4af37]/40 shadow-2xl relative overflow-hidden extice-card">
                 <div className="absolute top-0 right-0 w-72 h-72 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
 
                 <div className="flex items-center justify-between border-b border-emerald-800/80 pb-3 sm:pb-4 mb-5 sm:mb-6">
@@ -107,7 +107,7 @@ export const QualityStandards: React.FC = () => {
                   {metrics.map((m, idx) => (
                     <div
                       key={idx}
-                      className="bg-[#031c11]/80 p-3 sm:p-4.5 rounded-xl sm:rounded-2xl border border-emerald-800/50 flex flex-col justify-between hover:border-[#d4af37]/40 transition-colors"
+                      className="bg-[#10402a]/85 p-3 sm:p-4.5 rounded-xl sm:rounded-2xl border border-emerald-800/50 flex flex-col justify-between hover:border-[#d4af37]/40 transition-colors"
                     >
                       <div className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#f5d77f] font-mono">
                         <AnimatedCounter

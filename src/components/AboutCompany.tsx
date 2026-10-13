@@ -18,7 +18,7 @@ export const AboutCompany: React.FC = () => {
           {/* Left Column: Official Corporate Identity & Registry Card */}
           <div className="lg:col-span-5">
             <ScrollReveal variant="fade-right" delay={150} duration={850}>
-              <div className="luxury-card-dark bg-gradient-to-br from-[#062417] via-[#093522] to-[#041910] text-white p-5 sm:p-9 rounded-2xl sm:rounded-3xl border border-[#d4af37]/45 shadow-2xl relative overflow-hidden">
+              <div className="luxury-card-dark bg-gradient-to-br from-[#1a5c3c] via-[#22724a] to-[#12442c] text-white p-5 sm:p-9 rounded-2xl sm:rounded-3xl border border-[#d4af37]/45 shadow-2xl relative overflow-hidden">
                 {/* Background watermark with subtle float */}
                 <div className="absolute -bottom-10 -right-10 opacity-10 pointer-events-none animate-float-badge">
                   <JNJLogo size="xl" showText={false} />
@@ -36,7 +36,7 @@ export const AboutCompany: React.FC = () => {
 
                 {/* Registry Info Block */}
                 <div className="space-y-3.5 sm:space-y-4 text-xs">
-                  <div className="bg-[#031c11]/80 p-3 sm:p-3.5 rounded-xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
+                  <div className="bg-[#10402a]/85 p-3 sm:p-3.5 rounded-xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
                     <span className="text-[10px] font-mono uppercase tracking-wider text-[#d4af37] block mb-1">
                       Corporate Identity Number (CIN)
                     </span>
@@ -49,7 +49,7 @@ export const AboutCompany: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-[#031c11]/80 p-3 sm:p-3.5 rounded-xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
+                  <div className="bg-[#10402a]/85 p-3 sm:p-3.5 rounded-xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
                     <span className="text-[10px] font-mono uppercase tracking-wider text-[#d4af37] block mb-1">
                       Registered Corporate Address
                     </span>
@@ -60,7 +60,7 @@ export const AboutCompany: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-[#031c11]/80 p-3 sm:p-3.5 rounded-xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
+                  <div className="bg-[#10402a]/85 p-3 sm:p-3.5 rounded-xl border border-emerald-800/60 hover:border-[#d4af37]/40 transition-colors">
                     <span className="text-[10px] font-mono uppercase tracking-wider text-[#d4af37] block mb-1">
                       Registered Operating Desks
                     </span>
@@ -133,8 +133,8 @@ export const AboutCompany: React.FC = () => {
             <div className="grid sm:grid-cols-2 gap-4">
               <ScrollReveal variant="fade-up" delay={350}>
                 <div className="luxury-card-light p-5 rounded-2xl h-full group">
-                  <div className="flex items-center gap-2 font-bold text-slate-900 text-sm mb-1 group-hover:text-[#0b3d26] transition-colors">
-                    <Target className="size-4 text-[#0d472d] group-hover:scale-110 transition-transform" />
+                  <div className="flex items-center gap-2 font-bold text-slate-900 text-sm mb-1 group-hover:text-[#12442c] transition-colors">
+                    <Target className="size-4 text-[#185839] group-hover:scale-110 transition-transform" />
                     Direct Farmer Fair Trade
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
@@ -146,8 +146,8 @@ export const AboutCompany: React.FC = () => {
 
               <ScrollReveal variant="fade-up" delay={450}>
                 <div className="luxury-card-light p-5 rounded-2xl h-full group">
-                  <div className="flex items-center gap-2 font-bold text-slate-900 text-sm mb-1 group-hover:text-[#0b3d26] transition-colors">
-                    <Ship className="size-4 text-[#0d472d] group-hover:scale-110 transition-transform" />
+                  <div className="flex items-center gap-2 font-bold text-slate-900 text-sm mb-1 group-hover:text-[#12442c] transition-colors">
+                    <Ship className="size-4 text-[#185839] group-hover:scale-110 transition-transform" />
                     Maritime Container Excellence
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">

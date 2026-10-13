@@ -98,7 +98,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenRFQ }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <ScrollReveal variant="fade-up" delay={50}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
                 <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
                 <span>Official Corporate Liaison</span>
               </div>
@@ -119,7 +119,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenRFQ }) => {
                 <ScrollReveal key={card.title} variant="fade-up" delay={idx * 80}>
                   <div className="luxury-card-light p-6 sm:p-7 rounded-2xl h-full flex flex-col justify-between">
                     <div>
-                      <div className="size-12 rounded-xl bg-gradient-to-br from-[#062417] to-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center mb-4 shadow-md">
+                      <div className="size-12 rounded-xl bg-gradient-to-br from-[#1a5c3c] to-[#24764c] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center mb-4 shadow-md">
                         <Icon className="size-6 text-[#f5d77f]" />
                       </div>
                       <span className="text-[10px] font-mono font-bold text-emerald-800 uppercase tracking-widest block mb-1">
@@ -139,14 +139,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenRFQ }) => {
           </div>
 
           {/* Direct WhatsApp Callout Banner */}
-          <div className="mt-12 luxury-card-dark bg-gradient-to-r from-[#062417] via-[#093320] to-[#041a10] text-white p-6 sm:p-8 rounded-3xl border border-[#d4af37]/40 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="mt-12 luxury-card-dark bg-gradient-to-r from-[#12442c] via-[#1a5c3c] to-[#12442c] text-white p-6 sm:p-8 rounded-3xl border border-[#d4af37]/40 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <div className="size-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-lg">
                 <MessageCircle className="size-6" />
               </div>
               <div>
                 <h4 className="text-lg font-bold font-heading text-white">Instant WhatsApp Trade Hotline</h4>
-                <p className="text-xs text-emerald-200/80">
+                <p className="text-xs text-emerald-200/90">
                   Direct line with JNJ International trade directors for instantaneous pack date verification &amp; CIF rates.
                 </p>
               </div>
@@ -169,7 +169,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenRFQ }) => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
             <ScrollReveal variant="fade-up" delay={50}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
                 <HelpCircle className="size-3.5 text-[#d4af37]" />
                 <span>Commercial Buyer FAQ</span>
               </div>

@@ -57,7 +57,7 @@ export const MaritimeLogistics: React.FC = () => {
   ]
 
   return (
-    <section id="logistics" className="py-24 bg-[#03150e] text-white relative overflow-hidden border-y border-[#d4af37]/25">
+    <section id="logistics" className="py-24 bg-[#12442c] text-white relative overflow-hidden border-y border-[#d4af37]/25">
       {/* Background ambient lighting */}
       <div className="absolute top-1/3 left-10 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-emerald-500/12 rounded-full blur-3xl pointer-events-none" />
@@ -92,8 +92,8 @@ export const MaritimeLogistics: React.FC = () => {
         {/* 3 Quick Maritime Counter Badges */}
         <ScrollReveal variant="fade-up" delay={300}>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-14">
-            <div className="luxury-card-dark bg-[#062417]/85 p-4 rounded-2xl border border-[#d4af37]/35 flex items-center gap-4">
-              <div className="size-12 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
+            <div className="luxury-card-dark bg-[#1a5c3c]/85 p-4 rounded-2xl border border-[#d4af37]/35 flex items-center gap-4">
+              <div className="size-12 rounded-xl bg-[#24764c] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
                 <Ship className="size-6 text-[#f5d77f]" />
               </div>
               <div>
@@ -104,8 +104,8 @@ export const MaritimeLogistics: React.FC = () => {
               </div>
             </div>
 
-            <div className="luxury-card-dark bg-[#062417]/85 p-4 rounded-2xl border border-[#d4af37]/35 flex items-center gap-4">
-              <div className="size-12 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
+            <div className="luxury-card-dark bg-[#1a5c3c]/85 p-4 rounded-2xl border border-[#d4af37]/35 flex items-center gap-4">
+              <div className="size-12 rounded-xl bg-[#24764c] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
                 <Clock className="size-6 text-[#f5d77f]" />
               </div>
               <div>
@@ -116,8 +116,8 @@ export const MaritimeLogistics: React.FC = () => {
               </div>
             </div>
 
-            <div className="luxury-card-dark bg-[#062417]/85 p-4 rounded-2xl border border-[#d4af37]/35 flex items-center gap-4">
-              <div className="size-12 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
+            <div className="luxury-card-dark bg-[#1a5c3c]/85 p-4 rounded-2xl border border-[#d4af37]/35 flex items-center gap-4">
+              <div className="size-12 rounded-xl bg-[#24764c] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
                 <ThermometerSnowflake className="size-6 text-[#f5d77f]" />
               </div>
               <div>
@@ -143,10 +143,10 @@ export const MaritimeLogistics: React.FC = () => {
                     className="w-full h-[380px] sm:h-[440px] object-cover extice-zoom-img"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#03160d] via-black/30 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#12442c] via-black/30 to-transparent"></div>
 
                   {/* Bottom Caption Overlay */}
-                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#062215]/90 backdrop-blur-md border border-[#d4af37]/40 flex flex-wrap items-center justify-between gap-3 shadow-lg">
+                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#185839]/90 backdrop-blur-md border border-[#d4af37]/40 flex flex-wrap items-center justify-between gap-3 shadow-lg">
                     <div className="flex items-center gap-3">
                       <div className="p-2.5 rounded-lg bg-[#d4af37]/20 text-[#f5d77f] group-hover:scale-110 transition-transform duration-300">
                         <Anchor className="size-5" />

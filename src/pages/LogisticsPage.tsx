@@ -113,7 +113,7 @@ export const LogisticsPage: React.FC<LogisticsPageProps> = ({ onOpenRFQ }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mb-12">
             <ScrollReveal variant="fade-up" delay={50}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
                 <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
                 <span>Scheduled Sea Freight Corridors</span>
               </div>
@@ -136,7 +136,7 @@ export const LogisticsPage: React.FC<LogisticsPageProps> = ({ onOpenRFQ }) => {
 
             <div className="luxury-card-light overflow-x-auto rounded-2xl sm:rounded-3xl border border-emerald-900/15 shadow-md">
               <table className="w-full text-left text-xs text-slate-700 bg-white min-w-[750px]">
-                <thead className="bg-[#03150e] text-[#f5d77f] font-mono uppercase text-[11px] tracking-wider border-b border-[#d4af37]/30">
+                <thead className="bg-[#12442c] text-[#f5d77f] font-mono uppercase text-[11px] tracking-wider border-b border-[#d4af37]/30">
                   <tr>
                     <th className="py-4 px-5 font-bold">Departure Port</th>
                     <th className="py-4 px-5 font-bold">Destination Port</th>
@@ -154,13 +154,13 @@ export const LogisticsPage: React.FC<LogisticsPageProps> = ({ onOpenRFQ }) => {
                         <span>{rt.origin}</span>
                       </td>
                       <td className="py-4 px-5 text-slate-900 font-medium">{rt.destination}</td>
-                      <td className="py-4 px-5 font-mono text-[#0b3d26] font-bold">{rt.transit}</td>
+                      <td className="py-4 px-5 font-mono text-[#185839] font-bold">{rt.transit}</td>
                       <td className="py-4 px-5 text-slate-600">{rt.frequency}</td>
                       <td className="py-4 px-5 text-slate-500 font-mono text-[11px]">{rt.carrierType}</td>
                       <td className="py-4 px-5 text-right">
                         <button
                           onClick={() => onOpenRFQ(`Reefer Freight to ${rt.destination}`)}
-                          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-[#062417] text-[#f5d77f] hover:bg-[#d4af37] hover:text-[#041a10] border border-[#d4af37]/30 text-[11px] font-bold font-mono transition-colors cursor-pointer"
+                          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-[#185839] text-[#f5d77f] hover:bg-[#d4af37] hover:text-[#041a10] border border-[#d4af37]/30 text-[11px] font-bold font-mono transition-colors cursor-pointer"
                         >
                           <span>Book Slot</span>
                           <ArrowRight className="size-3" />
@@ -180,7 +180,7 @@ export const LogisticsPage: React.FC<LogisticsPageProps> = ({ onOpenRFQ }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <ScrollReveal variant="fade-up" delay={50}>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
                 <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
                 <span>Cold-Chain Assurance Protocols</span>
               </div>
@@ -201,7 +201,7 @@ export const LogisticsPage: React.FC<LogisticsPageProps> = ({ onOpenRFQ }) => {
                 <ScrollReveal key={item.title} variant="fade-up" delay={idx * 90}>
                   <div className="luxury-card-light p-6 rounded-2xl h-full flex flex-col justify-between">
                     <div>
-                      <div className="size-12 rounded-xl bg-gradient-to-br from-[#062417] to-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center mb-4">
+                      <div className="size-12 rounded-xl bg-gradient-to-br from-[#1a5c3c] to-[#24764c] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center mb-4">
                         <Icon className="size-6 text-[#f5d77f]" />
                       </div>
                       <h3 className="text-base font-bold text-slate-900 mb-2">{item.title}</h3>
@@ -216,12 +216,12 @@ export const LogisticsPage: React.FC<LogisticsPageProps> = ({ onOpenRFQ }) => {
           {/* Bottom CTA */}
           <div className="mt-16 text-center">
             <ScrollReveal variant="fade-up" delay={180}>
-              <div className="bg-[#03150e] text-white p-8 sm:p-10 rounded-3xl border border-[#d4af37]/40 shadow-2xl max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+              <div className="bg-[#12442c] text-white p-8 sm:p-10 rounded-3xl border border-[#d4af37]/40 shadow-2xl max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div className="text-left">
                   <h4 className="text-xl sm:text-2xl font-bold font-heading mb-1 text-white">
                     Need Current Freight Rates for Jebel Ali or Dammam?
                   </h4>
-                  <p className="text-xs sm:text-sm text-emerald-100/80">
+                  <p className="text-xs sm:text-sm text-emerald-100/90">
                     Our logistics desk provides transparent ocean freight quotes including THC, reefer plug-in fees, and phytosanitary clearance.
                   </p>
                 </div>

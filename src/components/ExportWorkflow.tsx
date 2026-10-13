@@ -73,7 +73,7 @@ export const ExportWorkflow: React.FC = () => {
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <ScrollReveal variant="fade-down" delay={50}>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#12442c]/10 border border-[#d4af37]/40 text-[#12442c] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
               <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
               <span>Farm-to-Port Cold Chain Protocol</span>
             </div>
@@ -129,14 +129,14 @@ export const ExportWorkflow: React.FC = () => {
 
                   <div>
                     {/* Step Icon with smooth bounce */}
-                    <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-[#062417] to-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center mb-5 shadow-lg shadow-emerald-950/20 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-[#1a5c3c] to-[#24764c] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center mb-5 shadow-lg shadow-emerald-950/20 group-hover:scale-110 transition-transform duration-300">
                       <Icon className="size-6.5" />
                     </div>
 
                     <span className="text-[11px] font-mono font-bold text-[#b38b2d] uppercase tracking-wider block mb-1">
                       {st.tagline}
                     </span>
-                    <h3 className="text-lg font-bold text-[#052215] mb-3 group-hover:text-[#0b3d26] transition-colors">
+                    <h3 className="text-lg font-bold text-[#052215] mb-3 group-hover:text-[#12442c] transition-colors">
                       {st.title}
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed mb-6 font-normal">

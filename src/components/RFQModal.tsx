@@ -97,7 +97,7 @@ _Sent via JNJ International Official Web Portal (CIN: U46301KL2026PTC104999)_`
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/75 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
       <div className="relative w-full max-w-3xl bg-white rounded-2xl shadow-2xl border border-emerald-900/20 overflow-hidden my-6">
         {/* Modal Top Header */}
-        <div className="bg-[#051f14] text-white p-5 sm:p-6 flex items-start justify-between border-b border-[#d4af37]/30">
+        <div className="bg-[#144a32] text-white p-5 sm:p-6 flex items-start justify-between border-b border-[#d4af37]/30">
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#f5d77f] px-2 py-0.5 rounded bg-white/10 border border-[#d4af37]/30">
@@ -170,7 +170,7 @@ _Sent via JNJ International Official Web Portal (CIN: U46301KL2026PTC104999)_`
               </button>
               <button
                 onClick={onClose}
-                className="px-5 py-2.5 bg-[#051f14] hover:bg-[#082e1e] text-[#f5d77f] font-semibold rounded-lg text-xs transition-colors"
+                className="px-5 py-2.5 bg-[#185839] hover:bg-[#206d47] text-[#f5d77f] font-semibold rounded-lg text-xs transition-colors"
               >
                 Close Window
               </button>

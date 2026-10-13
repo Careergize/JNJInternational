@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
-import ProduceTicker from './ProduceTicker'
 import Footer from './Footer'
 import RFQModal from './RFQModal'
 import ScrollProgressBar from './ScrollProgressBar'
@@ -25,15 +24,12 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#fafcf9] text-[#16271e] relative selection:bg-[#0d472d] selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#fafcf9] text-[#16271e] relative selection:bg-[#185839] selection:text-white">
       {/* Top Scroll Progress Bar */}
       <ScrollProgressBar />
 
       {/* Top CRR Associates Luxury Navbar */}
       <Navbar onOpenRFQ={() => handleOpenRFQ()} />
-
-      {/* Real-time Export Ticker */}
-      <ProduceTicker />
 
       {/* Main Page Route Content */}
       <main className="flex-1">

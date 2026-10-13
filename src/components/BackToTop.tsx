@@ -51,7 +51,7 @@ export const BackToTop: React.FC = () => {
     >
       {/* Tooltip bubble when it becomes WhatsApp */}
       {isAtEnd && (
-        <div className="hidden xs:flex absolute right-13 sm:right-14 top-1/2 -translate-y-1/2 whitespace-nowrap bg-[#062417] text-[#f5d77f] text-xs font-semibold px-3 py-1.5 rounded-full border border-emerald-500/40 shadow-xl animate-in fade-in slide-in-from-right-2 duration-300 items-center gap-1.5">
+        <div className="hidden xs:flex absolute right-13 sm:right-14 top-1/2 -translate-y-1/2 whitespace-nowrap bg-[#185839] text-[#f5d77f] text-xs font-semibold px-3 py-1.5 rounded-full border border-emerald-500/40 shadow-xl animate-in fade-in slide-in-from-right-2 duration-300 items-center gap-1.5">
           <span className="size-2 rounded-full bg-[#25D366] animate-ping"></span>
           <span>Chat on WhatsApp</span>
         </div>
@@ -63,7 +63,7 @@ export const BackToTop: React.FC = () => {
         className={`relative size-12 sm:size-13 rounded-full flex items-center justify-center transition-all duration-600 ease-[cubic-bezier(0.22,1,0.36,1)] group cursor-pointer shadow-2xl ${
           isAtEnd
             ? 'bg-[#25D366] text-white border-2 border-white/80 shadow-[0_12px_32px_rgba(37,211,102,0.45)] hover:scale-105 hover:bg-[#20ba59] active:scale-95'
-            : 'bg-[#062417] text-[#f5d77f] border border-[#d4af37]/40 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(6,36,23,0.35)] hover:border-[#f5d77f]'
+            : 'bg-[#185839] text-[#f5d77f] border border-[#d4af37]/40 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(24,88,57,0.35)] hover:border-[#f5d77f]'
         }`}
       >
         {/* Circular SVG track for scroll progress (visible when scrolling before the end) */}

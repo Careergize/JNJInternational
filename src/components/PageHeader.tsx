@@ -21,7 +21,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   showCta = true,
 }) => {
   return (
-    <section className="relative bg-[#03150e] py-8 sm:py-14 lg:py-18 px-4 sm:px-6 lg:px-8 overflow-hidden select-none border-b border-[#d4af37]/30">
+    <section className="relative bg-[#12442c] py-8 sm:py-14 lg:py-18 px-4 sm:px-6 lg:px-8 overflow-hidden select-none border-b border-[#d4af37]/30">
       {/* Background Ambient Glow & Light Grid */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#d4af37]/12 rounded-full blur-3xl"></div>
@@ -67,7 +67,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 
             {/* Subtitle / Editorial Excerpt */}
             <ScrollReveal variant="fade-up" delay={280} duration={900}>
-              <p className="text-xs sm:text-sm lg:text-base text-sky-100/80 max-w-2xl leading-relaxed font-normal">
+              <p className="text-xs sm:text-sm lg:text-base text-emerald-100/90 max-w-2xl leading-relaxed font-normal">
                 {subtitle}
               </p>
             </ScrollReveal>
@@ -77,7 +77,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
           {showCta && onOpenRFQ && (
             <div className="lg:col-span-4 flex justify-start lg:justify-end">
               <ScrollReveal variant="fade-left" delay={320} duration={900} className="w-full max-w-md lg:max-w-sm">
-                <div className="luxury-card-dark bg-[#062417]/90 p-4 sm:p-6 rounded-2xl border border-[#d4af37]/35 shadow-xl w-full">
+                <div className="luxury-card-dark bg-[#1a5c3c]/90 p-4 sm:p-6 rounded-2xl border border-[#d4af37]/35 shadow-xl w-full">
                   <span className="text-[10px] font-mono uppercase tracking-widest text-[#f5d77f] font-bold block mb-1">
                     Direct Export Quotation
                   </span>
