@@ -65,7 +65,7 @@ export const ExportWorkflow: React.FC = () => {
   ]
 
   return (
-    <section id="process" className="py-24 bg-white relative overflow-hidden">
+    <section id="process" className="py-24 bg-[#f8faf5] relative overflow-hidden border-t border-[#d4af37]/20">
       {/* Background ambient decorative orb */}
       <div className="absolute top-1/2 right-0 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl pointer-events-none -translate-y-1/2"></div>
 
@@ -73,9 +73,10 @@ export const ExportWorkflow: React.FC = () => {
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <ScrollReveal variant="fade-down" delay={50}>
-            <span className="text-xs uppercase tracking-[0.2em] font-mono text-[#aa851c] font-semibold block mb-2">
-              Operational Protocol
-            </span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
+              <span>Farm-to-Port Cold Chain Protocol</span>
+            </div>
           </ScrollReveal>
 
           <ScrollReveal variant="fade-up" delay={150}>
@@ -105,7 +106,7 @@ export const ExportWorkflow: React.FC = () => {
                 stroke="#d4af37"
                 strokeWidth="2"
                 strokeDasharray="6 6"
-                className="animate-dash-flow opacity-30"
+                className="animate-dash-flow opacity-50"
               />
             </svg>
           </div>
@@ -120,15 +121,15 @@ export const ExportWorkflow: React.FC = () => {
                 duration={750}
                 className="h-full"
               >
-                <div className="extice-card bg-[#fafcf9] rounded-2xl p-6 sm:p-7 border border-emerald-950/10 shadow-sm hover:shadow-2xl flex flex-col justify-between group relative h-full z-10">
+                <div className="luxury-card-light rounded-2xl p-6 sm:p-7 flex flex-col justify-between group relative h-full z-10">
                   {/* Step number watermark that glows on hover */}
-                  <div className="absolute top-4 right-4 text-4xl font-mono font-extrabold text-emerald-900/10 group-hover:text-[#d4af37]/30 transition-all duration-500 select-none">
+                  <div className="absolute top-4 right-4 text-4xl font-mono font-extrabold text-emerald-900/10 group-hover:text-[#d4af37]/40 transition-all duration-500 select-none">
                     {st.step}
                   </div>
 
                   <div>
                     {/* Step Icon with smooth bounce */}
-                    <div className="w-13 h-13 rounded-2xl bg-[#0b3d26] text-[#f5d77f] flex items-center justify-center mb-5 shadow-lg shadow-emerald-950/20 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                    <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-[#062417] to-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/40 flex items-center justify-center mb-5 shadow-lg shadow-emerald-950/20 group-hover:scale-110 transition-transform duration-300">
                       <Icon className="size-6.5" />
                     </div>
 

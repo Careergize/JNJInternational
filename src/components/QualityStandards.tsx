@@ -39,15 +39,16 @@ export const QualityStandards: React.FC = () => {
   ]
 
   return (
-    <section id="quality" className="py-24 bg-[#fafcf8] border-t border-emerald-900/10 relative overflow-hidden">
+    <section id="quality" className="py-24 bg-[#f8faf5] border-t border-[#d4af37]/20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Certifications & Quality Commitment */}
           <div className="lg:col-span-6">
             <ScrollReveal variant="fade-down" delay={50}>
-              <span className="text-xs uppercase tracking-[0.2em] font-mono text-[#aa851c] font-semibold block mb-2">
-                Quality &amp; Standards
-              </span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+                <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
+                <span>APEDA Standards &bull; Laboratory Audited</span>
+              </div>
             </ScrollReveal>
 
             <ScrollReveal variant="fade-up" delay={150}>
@@ -70,7 +71,7 @@ export const QualityStandards: React.FC = () => {
             <div className="grid sm:grid-cols-2 gap-4">
               {certifications.map((cert, idx) => (
                 <ScrollReveal key={idx} variant="fade-up" delay={250 + idx * 80}>
-                  <div className="extice-card bg-white p-5 rounded-2xl border border-emerald-900/10 shadow-sm hover:shadow-xl transition-all h-full flex flex-col justify-between group">
+                  <div className="luxury-card-light p-5 rounded-2xl h-full flex flex-col justify-between group">
                     <div>
                       <div className="flex items-center gap-2 mb-2">
                         <BadgeCheck className="size-5 text-[#0d472d] group-hover:text-[#d4af37] group-hover:scale-110 transition-all duration-300" />
@@ -88,27 +89,27 @@ export const QualityStandards: React.FC = () => {
           {/* Right Column: Technical Quality Matrix */}
           <div className="lg:col-span-6">
             <ScrollReveal variant="fade-left" delay={200} duration={850}>
-              <div className="bg-[#062417] text-white rounded-3xl p-6 sm:p-8 border border-[#d4af37]/40 shadow-2xl relative overflow-hidden extice-card">
+              <div className="bg-[#062417] text-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 border border-[#d4af37]/40 shadow-2xl relative overflow-hidden extice-card">
                 <div className="absolute top-0 right-0 w-72 h-72 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
 
-                <div className="flex items-center justify-between border-b border-emerald-800/80 pb-4 mb-6">
+                <div className="flex items-center justify-between border-b border-emerald-800/80 pb-3 sm:pb-4 mb-5 sm:mb-6">
                   <div>
                     <span className="text-[10px] font-mono uppercase tracking-widest text-[#f5d77f]">
                       JNJ LAB &amp; DISPATCH MATRIX
                     </span>
-                    <h3 className="text-lg font-bold text-white mt-0.5">Shipment Benchmark Parameters</h3>
+                    <h3 className="text-base sm:text-lg font-bold text-white mt-0.5">Shipment Benchmark Parameters</h3>
                   </div>
-                  <ShieldCheck className="size-7 text-[#d4af37] animate-beacon" />
+                  <ShieldCheck className="size-6 sm:size-7 text-[#d4af37] animate-beacon shrink-0" />
                 </div>
 
                 {/* 4 Stats Cards with AnimatedCounter */}
-                <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
                   {metrics.map((m, idx) => (
                     <div
                       key={idx}
-                      className="bg-[#031c11]/80 p-4.5 rounded-2xl border border-emerald-800/50 flex flex-col justify-between hover:border-[#d4af37]/40 transition-colors"
+                      className="bg-[#031c11]/80 p-3 sm:p-4.5 rounded-xl sm:rounded-2xl border border-emerald-800/50 flex flex-col justify-between hover:border-[#d4af37]/40 transition-colors"
                     >
-                      <div className="text-2xl sm:text-3xl font-extrabold text-[#f5d77f] font-mono">
+                      <div className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#f5d77f] font-mono">
                         <AnimatedCounter
                           value={m.value}
                           prefix={m.prefix}
@@ -116,7 +117,7 @@ export const QualityStandards: React.FC = () => {
                           decimals={m.decimals}
                         />
                       </div>
-                      <div className="text-xs font-semibold text-white mt-1.5">{m.label}</div>
+                      <div className="text-xs font-semibold text-white mt-1 sm:mt-1.5">{m.label}</div>
                       <div className="text-[10px] text-emerald-300/70 mt-0.5">{m.sub}</div>
                     </div>
                   ))}

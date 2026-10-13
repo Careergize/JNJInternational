@@ -15,12 +15,12 @@ export const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
   prefix = '',
   suffix = '',
   decimals = 0,
-  duration = 1800,
+  duration = 2000,
   className = '',
 }) => {
   const [displayValue, setDisplayValue] = useState(0)
   const { elementRef, isVisible } = useScrollReveal<HTMLSpanElement>({
-    threshold: 0.2,
+    threshold: 0.1,
     once: true,
   })
   const hasAnimated = useRef(false)
@@ -36,8 +36,8 @@ export const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
       const elapsed = timestamp - startTimestamp
       const progress = Math.min(elapsed / duration, 1)
 
-      // Ease out exponential curve
-      const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress)
+      // Silky smooth quartic ease-out deceleration: glides gently to full count
+      const easeProgress = 1 - Math.pow(1 - progress, 4)
       const current = easeProgress * value
 
       setDisplayValue(current)

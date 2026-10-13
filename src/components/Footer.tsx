@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {
   Phone,
   Mail,
@@ -24,7 +25,9 @@ export const Footer: React.FC = () => {
           {/* Brand & Registry Col */}
           <div className="lg:col-span-4 space-y-4">
             <ScrollReveal variant="fade-up" delay={50}>
-              <JNJLogo size="md" variant="dark" />
+              <Link to="/">
+                <JNJLogo size="md" variant="dark" />
+              </Link>
               <p className="text-xs text-emerald-200/70 leading-relaxed pr-4 mt-3">
                 JNJ International Private Limited is an accredited Indian agricultural export house headquartered in
                 Thiruvananthapuram, Kerala. Specializing in high-volume, farm-gate aggregated fresh vegetables for global
@@ -48,52 +51,71 @@ export const Footer: React.FC = () => {
               </h4>
               <ul className="space-y-2.5 text-xs">
                 <li>
-                  <a href="#products" className="hover:text-white transition-colors flex items-center gap-2 group">
+                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
                     <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
                     <span>Fresh Tomatoes (Roma &amp; Hybrid)</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#products" className="hover:text-white transition-colors flex items-center gap-2 group">
+                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
                     <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
                     <span>Nashik &amp; Southern Red Onions</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#products" className="hover:text-white transition-colors flex items-center gap-2 group">
+                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
                     <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
                     <span>Golden Table &amp; Processing Potatoes</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#products" className="hover:text-white transition-colors flex items-center gap-2 group">
+                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
                     <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
                     <span>G4 Green Chillies &amp; Ginger Roots</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#products" className="hover:text-white transition-colors flex items-center gap-2 group">
+                  <Link to="/products" className="hover:text-white transition-colors flex items-center gap-2 group">
                     <span className="size-1 rounded-full bg-[#d4af37] group-hover:scale-150 transition-transform"></span>
                     <span>Mixed Reefer Container Shipments</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </ScrollReveal>
           </div>
 
-          {/* Logistics & Seaports */}
+          {/* Quick Multipage Navigation & Logistics Hubs */}
           <div className="lg:col-span-2 space-y-3">
             <ScrollReveal variant="fade-up" delay={180}>
               <h4 className="text-xs font-bold uppercase tracking-wider text-[#f5d77f] font-mono mb-3">
-                Shipping Hubs
+                Corporate Pages
               </h4>
-              <ul className="space-y-2 text-xs text-emerald-200/70">
-                <li className="hover:text-emerald-100 transition-colors">Vizhinjam Int&apos;l Seaport</li>
-                <li className="hover:text-emerald-100 transition-colors">Cochin Port (Vallarpadam)</li>
-                <li className="hover:text-emerald-100 transition-colors">Tuticorin V.O.C Port</li>
-                <li className="hover:text-emerald-100 transition-colors">Trivandrum Air Cargo (TRV)</li>
-                <li className="hover:text-emerald-100 transition-colors">Jebel Ali (Dubai) Liner</li>
-                <li className="hover:text-emerald-100 transition-colors">Jeddah Islamic Port Corridor</li>
+              <ul className="space-y-2 text-xs">
+                <li>
+                  <Link to="/about" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
+                    About JNJ International
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
+                    Produce Specifications
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/logistics" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
+                    Maritime Sea Logistics
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/quality" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
+                    Quality &amp; APEDA Standards
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="text-emerald-200/80 hover:text-[#f5d77f] transition-colors">
+                    Export Enquiry Desk
+                  </Link>
+                </li>
               </ul>
             </ScrollReveal>
           </div>
@@ -129,9 +151,9 @@ export const Footer: React.FC = () => {
                     href="https://wa.me/917994561627"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-emerald-900/60 hover:bg-emerald-800 text-emerald-200 hover:text-white text-[11px] font-semibold border border-emerald-700/60 transition-all hover:scale-105"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#052417] hover:bg-[#07301f] text-[#f5d77f] hover:text-white text-[11px] font-semibold border border-[#d4af37]/40 shadow-sm transition-all hover:scale-105"
                   >
-                    <MessageCircle className="size-3.5 text-[#f5d77f]" />
+                    <MessageCircle className="size-3.5 text-[#d4af37]" />
                     <span>Chat on WhatsApp Export Desk</span>
                   </a>
                 </div>
@@ -141,13 +163,13 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Strip */}
-        <div className="pt-8 flex flex-wrap items-center justify-between gap-4 text-xs text-emerald-300/60">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-emerald-300/60 text-center sm:text-left">
           <div>
             &copy; {new Date().getFullYear()} <strong>JNJ INTERNATIONAL PRIVATE LIMITED</strong>. All Rights Reserved.
-            CIN: U46301KL2026PTC104999.
+            <span className="block sm:inline sm:ml-1">CIN: U46301KL2026PTC104999.</span>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <span>Thiruvananthapuram, Kerala, India</span>
             <button
               onClick={scrollToTop}

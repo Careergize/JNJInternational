@@ -178,16 +178,16 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
       : PRODUCE_DATA.filter((item) => item.category === activeTab)
 
   return (
-    <section id="products" className="py-24 bg-gradient-to-b from-[#fafcf9] via-[#f4f7f2] to-[#fafcf9] relative overflow-hidden">
+    <section id="products" className="py-24 bg-[#f8faf5] relative overflow-hidden border-t border-[#d4af37]/20">
       {/* Background ambient decorative shapes */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-b from-emerald-100/30 to-transparent pointer-events-none rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-b from-emerald-100/25 to-transparent pointer-events-none rounded-full blur-3xl"></div>
       <div className="absolute top-40 right-10 w-72 h-72 bg-[#d4af37]/5 rounded-full blur-2xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <ScrollReveal variant="fade-down" delay={50}>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-900/10 border border-[#d4af37]/35 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-4 shadow-sm">
               <BadgeCheck className="size-3.5 text-[#d4af37]" />
               <span>APEDA Certified &bull; Farm-Direct Aggregation</span>
             </div>
@@ -204,22 +204,22 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
 
           <ScrollReveal variant="fade-up" delay={250}>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-              Direct from India's most fertile agricultural belts. Graded to uniform caliber, cold-chain stabilized, and packaged to arrive at international destination ports in prime condition.
+              Direct from India&apos;s most fertile agricultural belts. Graded to uniform caliber, cold-chain stabilized, and packaged to arrive at international destination ports in prime condition.
             </p>
           </ScrollReveal>
 
           {/* Value propositions pill bar */}
           <ScrollReveal variant="fade-up" delay={350}>
             <div className="flex flex-wrap items-center justify-center gap-3 mt-6 text-xs text-slate-700">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/90 border border-slate-200/80 shadow-xs font-medium hover:border-[#d4af37]/50 transition-colors">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/95 border border-emerald-900/10 shadow-xs font-medium hover:border-[#d4af37]/50 transition-colors">
                 <ShieldCheck className="size-3.5 text-emerald-700" />
                 100% Traceable Harvest
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/90 border border-slate-200/80 shadow-xs font-medium hover:border-[#d4af37]/50 transition-colors">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/95 border border-emerald-900/10 shadow-xs font-medium hover:border-[#d4af37]/50 transition-colors">
                 <Thermometer className="size-3.5 text-emerald-700" />
                 Pre-Cooled Reefer Transit
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/90 border border-slate-200/80 shadow-xs font-medium hover:border-[#d4af37]/50 transition-colors">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/95 border border-emerald-900/10 shadow-xs font-medium hover:border-[#d4af37]/50 transition-colors">
                 <Ship className="size-3.5 text-emerald-700" />
                 Fast Dispatch via Vizhinjam Port
               </span>
@@ -228,7 +228,7 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
 
           {/* Interactive Category Filter Tabs */}
           <ScrollReveal variant="fade-up" delay={450}>
-            <div className="flex flex-wrap items-center justify-center gap-2 mt-8 p-1.5 bg-white/90 backdrop-blur-md rounded-full border border-slate-200/80 shadow-sm max-w-fit mx-auto">
+            <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 mt-6 sm:mt-8 p-1 sm:p-1.5 bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-full border border-emerald-900/10 shadow-sm max-w-full sm:max-w-fit mx-auto">
               {[
                 { key: 'all', label: 'All Produce', count: PRODUCE_DATA.length },
                 { key: 'tomatoes', label: 'Fresh Tomatoes', count: 1 },
@@ -241,15 +241,15 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
                   <button
                     key={tab.key}
                     onClick={() => setActiveTab(tab.key as any)}
-                    className={`px-4 py-2 text-xs font-semibold rounded-full transition-all duration-300 flex items-center gap-2 cursor-pointer ${
+                    className={`px-3 py-1.5 sm:px-4 sm:py-2 text-[11px] sm:text-xs font-semibold rounded-full transition-all duration-300 flex items-center gap-1.5 sm:gap-2 cursor-pointer ${
                       isActive
-                        ? 'bg-gradient-to-r from-[#0b3823] to-[#072417] text-white shadow-md shadow-emerald-950/20 ring-1 ring-[#d4af37]/40 scale-[1.02]'
-                        : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/80'
+                        ? 'bg-gradient-to-r from-[#062417] to-[#0a3824] text-[#f5d77f] shadow-md shadow-emerald-950/20 ring-1 ring-[#d4af37]/50 scale-[1.02]'
+                        : 'text-slate-600 hover:text-[#062417] hover:bg-emerald-50/50'
                     }`}
                   >
                     <span>{tab.label}</span>
                     <span
-                      className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
+                      className={`text-[9px] sm:text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
                         isActive ? 'bg-[#d4af37] text-[#072417] font-bold' : 'bg-slate-200 text-slate-600'
                       }`}
                     >
@@ -275,9 +275,9 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
                 duration={750}
                 className="h-full"
               >
-                <div className="extice-card bg-white rounded-3xl overflow-hidden border border-slate-200/90 shadow-[0_4px_24px_rgba(0,0,0,0.04)] flex flex-col group relative h-full">
+                <div className="luxury-card-light rounded-3xl overflow-hidden flex flex-col group relative h-full">
                   {/* Product Image Showcase with Extice Zoom */}
-                  <div className="relative h-72 sm:h-80 w-full extice-zoom-wrap bg-slate-950">
+                  <div className="relative h-64 sm:h-80 w-full extice-zoom-wrap bg-slate-950">
                     <img
                       src={item.image}
                       alt={item.name}
@@ -287,27 +287,26 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
                     {/* Cinematic gradient vignette */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#041a10] via-black/35 to-black/15 pointer-events-none transition-opacity duration-500 group-hover:opacity-90"></div>
 
-                    {/* Top Left: Export Standard Badge */}
-                    <div className="absolute top-4 left-4 z-10">
-                      <span className="text-[10px] sm:text-xs font-mono font-bold tracking-wider px-3 py-1.5 rounded-full bg-[#051f14]/85 text-[#f5d77f] border border-[#d4af37]/40 shadow-md backdrop-blur-md inline-flex items-center gap-1.5">
-                        <BadgeCheck className="size-3 text-[#f5d77f]" />
-                        {item.badge}
+                    {/* Top Badges Row */}
+                    <div className="absolute top-3 sm:top-4 left-3 sm:left-4 right-3 sm:right-4 z-10 flex flex-wrap items-center justify-between gap-2 pointer-events-none">
+                      <span className="text-[9px] sm:text-xs font-mono font-bold tracking-wider px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-[#051f14]/90 text-[#f5d77f] border border-[#d4af37]/40 shadow-md backdrop-blur-md inline-flex items-center gap-1 sm:gap-1.5 pointer-events-auto max-w-[65%] sm:max-w-none truncate">
+                        <BadgeCheck className="size-3 text-[#f5d77f] shrink-0" />
+                        <span className="truncate">{item.badge}</span>
                       </span>
-                    </div>
 
-                    {/* Top Right: Origin Tag */}
-                    <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-slate-800 shadow-md flex items-center gap-1.5 border border-white/60">
-                      <MapPin className="size-3.5 text-emerald-700" />
-                      <span>{item.origins}</span>
+                      <div className="bg-white/95 backdrop-blur-md px-2.5 py-1 sm:px-3 rounded-full text-[10px] sm:text-xs font-semibold text-slate-800 shadow-md flex items-center gap-1 sm:gap-1.5 border border-white/60 pointer-events-auto">
+                        <MapPin className="size-3 sm:size-3.5 text-emerald-700 shrink-0" />
+                        <span>{item.origins}</span>
+                      </div>
                     </div>
 
                     {/* Bottom Image Overlay: Title & Botanical Name */}
-                    <div className="absolute bottom-5 left-5 right-5 z-10">
-                      <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight drop-shadow-md font-heading group-hover:text-[#f5d77f] transition-colors duration-300">
+                    <div className="absolute bottom-4 sm:bottom-5 left-4 sm:left-5 right-4 sm:right-5 z-10 pr-10">
+                      <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight drop-shadow-md font-heading group-hover:text-[#f5d77f] transition-colors duration-300 leading-tight">
                         {item.name}
                       </h3>
-                      <div className="flex items-center gap-2 mt-1.5">
-                        <span className="inline-block text-xs font-mono text-emerald-200 bg-emerald-950/60 backdrop-blur-sm px-2.5 py-0.5 rounded-md border border-emerald-500/30">
+                      <div className="flex items-center gap-2 mt-1 sm:mt-1.5">
+                        <span className="inline-block text-[10px] sm:text-xs font-mono text-emerald-200 bg-emerald-950/60 backdrop-blur-sm px-2 sm:px-2.5 py-0.5 rounded-md border border-emerald-500/30 truncate max-w-full">
                           {item.scientificName}
                         </span>
                       </div>
@@ -316,10 +315,10 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
                     {/* Quick View Button on Image */}
                     <button
                       onClick={() => setDetailModalItem(item)}
-                      className="absolute bottom-5 right-5 z-20 size-9 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md border border-white/40 text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 hover:scale-110 cursor-pointer shadow-lg"
+                      className="absolute bottom-4 sm:bottom-5 right-4 sm:right-5 z-20 size-8 sm:size-9 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md border border-white/40 text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 hover:scale-110 cursor-pointer shadow-lg"
                       title="View Full Technical Details"
                     >
-                      <Eye className="size-4" />
+                      <Eye className="size-3.5 sm:size-4" />
                     </button>
                   </div>
 
@@ -476,10 +475,10 @@ export const ProduceSection: React.FC<ProduceSectionProps> = ({ onOpenRFQ }) => 
                         {/* Request Formal Quote Button with Shimmer & Slide */}
                         <button
                           onClick={() => onOpenRFQ(item.name)}
-                          className="extice-btn-primary btn-shimmer group/btn flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-semibold text-white bg-gradient-to-r from-[#0b3823] to-[#072417] hover:from-[#0d472d] hover:to-[#0a3520] rounded-full shadow-md cursor-pointer"
+                          className="extice-btn-primary btn-shimmer group/btn flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-bold text-[#041a10] bg-gradient-to-r from-[#e5a83b] via-[#eaae42] to-[#d4af37] hover:brightness-105 rounded-full shadow-md cursor-pointer"
                         >
                           <span>Request Quote</span>
-                          <ArrowRight className="size-3.5 text-[#f5d77f] group-hover/btn:translate-x-1.5 transition-transform duration-300" />
+                          <ArrowRight className="size-3.5 text-[#041a10] group-hover/btn:translate-x-1.5 transition-transform duration-300" />
                         </button>
                       </div>
                     </div>

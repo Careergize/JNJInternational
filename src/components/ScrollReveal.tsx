@@ -25,8 +25,8 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
   children,
   variant = 'fade-up',
   delay = 0,
-  duration = 750,
-  threshold = 0.15,
+  duration = 1000,
+  threshold = 0.08,
   className = '',
   as: Component = 'div',
   once = true,
@@ -36,34 +36,35 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
     once,
   })
 
-  // Get initial transform style based on variant
+  // Ultra-gentle, silky displacement offsets
   const getInitialStyle = () => {
     switch (variant) {
       case 'fade-up':
-        return 'translate3d(0, 36px, 0)'
+        return 'translate3d(0, 20px, 0)'
       case 'fade-down':
-        return 'translate3d(0, -36px, 0)'
+        return 'translate3d(0, -20px, 0)'
       case 'fade-left':
-        return 'translate3d(40px, 0, 0)'
+        return 'translate3d(24px, 0, 0)'
       case 'fade-right':
-        return 'translate3d(-40px, 0, 0)'
+        return 'translate3d(-24px, 0, 0)'
       case 'zoom-in':
-        return 'scale3d(0.92, 0.92, 1)'
+        return 'scale3d(0.97, 0.97, 1)'
       case 'mask-up':
-        return 'translate3d(0, 100%, 0)'
+        return 'translate3d(0, 40px, 0)'
       default:
-        return 'translate3d(0, 36px, 0)'
+        return 'translate3d(0, 20px, 0)'
     }
   }
 
   const baseStyle: React.CSSProperties = {
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translate3d(0, 0, 0) scale3d(1, 1, 1)' : getInitialStyle(),
-    transitionProperty: 'opacity, transform',
+    filter: isVisible ? 'blur(0px)' : 'blur(3px)',
+    transitionProperty: 'opacity, transform, filter',
     transitionDuration: `${duration}ms`,
-    transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)', // Extice silky smooth curve
+    transitionTimingFunction: 'cubic-bezier(0.22, 1, 0.36, 1)', // Quintic silky smooth deceleration curve
     transitionDelay: `${delay}ms`,
-    willChange: 'opacity, transform',
+    willChange: 'opacity, transform, filter',
   }
 
   return (

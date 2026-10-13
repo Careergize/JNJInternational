@@ -30,25 +30,25 @@ export const JNJLogo: React.FC<JNJLogoProps> = ({
         alt="JNJ International Private Limited Official Seal"
         width={dimension}
         height={dimension}
-        className="shrink-0 object-contain drop-shadow-md select-none transition-transform duration-300 hover:scale-105 pointer-events-auto"
+        className="shrink-0 object-contain drop-shadow-md select-none transition-transform duration-300 hover:scale-105 pointer-events-auto w-9 h-9 sm:w-auto sm:h-auto"
         loading="eager"
         decoding="async"
-        style={{ width: `${dimension}px`, height: `${dimension}px` }}
+        style={{ maxWidth: `${dimension}px`, maxHeight: `${dimension}px` }}
       />
 
       {/* Brand Name & Classification */}
       {showText && (
-        <div className="flex flex-col text-left leading-tight">
-          <div className="flex items-center gap-1.5">
+        <div className="flex flex-col text-left leading-tight min-w-0">
+          <div className="flex items-center gap-1 sm:gap-1.5 flex-nowrap">
             <span
-              className={`font-heading font-extrabold tracking-wider ${textSize} ${
+              className={`font-heading font-extrabold tracking-wider text-sm sm:${textSize} ${
                 variant === 'dark' ? 'text-white' : 'text-[#072d1c]'
               }`}
             >
               JNJ
             </span>
             <span
-              className={`font-heading font-bold tracking-widest ${textSize} ${
+              className={`font-heading font-bold tracking-widest text-sm sm:${textSize} ${
                 variant === 'dark' ? 'text-[#f5d77f]' : 'text-[#0d472d]'
               }`}
             >
@@ -56,7 +56,7 @@ export const JNJLogo: React.FC<JNJLogoProps> = ({
             </span>
           </div>
           <span
-            className={`font-sans uppercase tracking-[0.18em] font-semibold ${subSize} ${
+            className={`font-sans uppercase tracking-[0.14em] sm:tracking-[0.18em] font-semibold text-[8px] sm:${subSize} truncate ${
               variant === 'dark' ? 'text-emerald-200/80' : 'text-emerald-800/80'
             }`}
           >

@@ -157,7 +157,7 @@ _Sent via JNJ International Official Web Portal (CIN: U46301KL2026PTC104999)_`
                   const msg = generateWhatsAppMessage()
                   window.open(`https://wa.me/917994561627?text=${msg}`, '_blank')
                 }}
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-lg text-xs shadow-md transition-all"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#f5d77f] via-[#d4af37] to-[#c59b27] hover:brightness-105 active:scale-95 text-[#041a10] font-bold rounded-lg text-xs shadow-md transition-all cursor-pointer"
               >
                 <MessageCircle className="size-4" />
                 <span>Open in WhatsApp Desk</span>

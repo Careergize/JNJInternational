@@ -5,15 +5,19 @@
   --font-heading: "Outfit", sans-serif;
   --font-mono: "Space Grotesk", monospace;
   
+  --color-jnj-obsidian: #03150e;
   --color-jnj-deep: #051f14;
+  --color-jnj-surface: #062317;
   --color-jnj-forest: #0b3d26;
   --color-jnj-emerald: #125737;
   --color-jnj-mint: #25855a;
   --color-jnj-gold: #d4af37;
   --color-jnj-gold-light: #f5d77f;
   --color-jnj-gold-dark: #aa851c;
+  --color-jnj-amber: #e5a83b;
   --color-jnj-cream: #fafbf7;
   --color-jnj-sand: #f2f5ec;
+  --color-jnj-alabaster: #f8faf5;
 }
 
 @layer base {
@@ -53,39 +57,45 @@ body {
 }
 
 /* ==========================================================================
-   Extice Signature Animations & Keyframes
+   Extice Signature Animations & Keyframes (Ultra-Smooth Fluid Motion)
    ========================================================================== */
 
 /* 1. Gentle Floating Badge */
 @keyframes floatBadge {
   0%, 100% {
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(0deg);
   }
   50% {
-    transform: translateY(-9px);
+    transform: translateY(-6px) rotate(0.25deg);
   }
 }
 
 .animate-float-badge {
-  animation: floatBadge 5.5s ease-in-out infinite;
+  animation: floatBadge 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  will-change: transform;
 }
 
 .animate-float-badge-delayed {
-  animation: floatBadge 6.5s ease-in-out infinite 1.2s;
+  animation: floatBadge 9.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite 1.8s;
+  will-change: transform;
 }
 
 /* 2. Slow Ken Burns Cinematic Pan & Zoom */
 @keyframes kenBurnsSlow {
   0% {
-    transform: scale(1);
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.04) translate3d(-0.4%, -0.2%, 0);
   }
   100% {
-    transform: scale(1.07);
+    transform: scale(1.07) translate3d(0.4%, 0.2%, 0);
   }
 }
 
 .animate-ken-burns {
-  animation: kenBurnsSlow 18s ease-in-out infinite alternate;
+  animation: kenBurnsSlow 32s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate;
+  will-change: transform;
 }
 
 /* 3. Button Shimmer Sweep */
@@ -117,27 +127,27 @@ body {
 }
 
 .btn-shimmer:hover::after {
-  animation: shimmerSweep 1.1s ease-in-out;
+  animation: shimmerSweep 1.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* 4. Active Beacon Radar Pulse */
 @keyframes beaconPulse {
   0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.6);
   }
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+    box-shadow: 0 0 0 8px rgba(212, 175, 55, 0);
   }
   100% {
-    transform: scale(0.95);
+    transform: scale(0.96);
     box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
   }
 }
 
 .animate-beacon {
-  animation: beaconPulse 2.4s infinite;
+  animation: beaconPulse 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 /* 5. Expanding Section Decorative Accent Line */
@@ -158,19 +168,20 @@ body {
   width: 40px;
   background: linear-gradient(90deg, #d4af37, #f5d77f);
   border-radius: 2px;
-  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* 6. Marquee Ribbon */
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% { transform: translate3d(0%, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 34s linear infinite;
+  animation: marquee 46s linear infinite;
+  will-change: transform;
 }
 
 .animate-marquee:hover {
@@ -186,7 +197,7 @@ body {
 
 .animate-dash-flow {
   stroke-dasharray: 6 6;
-  animation: dashFlow 2s linear infinite;
+  animation: dashFlow 3.5s linear infinite;
 }
 
 /* ==========================================================================
@@ -195,15 +206,16 @@ body {
 
 /* Extice Card Hover Dynamics */
 .extice-card {
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.4s ease;
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, box-shadow;
 }
 
 .extice-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 22px 42px -10px rgba(6, 36, 23, 0.14);
-  border-color: rgba(212, 175, 55, 0.55);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -10px rgba(6, 36, 23, 0.12);
+  border-color: rgba(212, 175, 55, 0.5);
 }
 
 /* Extice Image Zoom Container */
@@ -212,12 +224,13 @@ body {
 }
 
 .extice-zoom-wrap img {
-  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+  transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
 }
 
 .extice-zoom-wrap:hover img,
 .group:hover .extice-zoom-img {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* Nav Link Hover Underline Indicator */
@@ -236,7 +249,7 @@ body {
   background: linear-gradient(90deg, #0b3d26, #d4af37);
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   border-radius: 2px;
 }
 
@@ -249,12 +262,15 @@ body {
 .extice-btn-primary {
   position: relative;
   overflow: hidden;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              background-color 0.35s ease;
+  will-change: transform;
 }
 
 .extice-btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px -4px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 10px 24px -4px rgba(212, 175, 55, 0.4);
 }
 
 .extice-btn-primary:active {
@@ -263,7 +279,11 @@ body {
 
 .extice-btn-outline {
   position: relative;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.35s ease,
+              color 0.35s ease,
+              background-color 0.35s ease;
+  will-change: transform;
 }
 
 .extice-btn-outline:hover {
@@ -277,12 +297,12 @@ body {
 }
 
 /* Arrow Slide */
-.group:hover .arrow-slide {
-  transform: translate(3px, -3px);
+.arrow-slide {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.arrow-slide {
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+.group:hover .arrow-slide {
+  transform: translate(3px, -3px);
 }
 
 /* Glass Panels */
@@ -313,3 +333,40 @@ body {
 .gold-border {
   border-color: rgba(212, 175, 55, 0.35);
 }
+
+.luxury-glow-gold {
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.25);
+}
+
+.luxury-glow-emerald {
+  box-shadow: 0 10px 30px -5px rgba(11, 61, 38, 0.3);
+}
+
+.luxury-card-light {
+  background: #ffffff;
+  border: 1px solid rgba(11, 61, 38, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(6, 35, 23, 0.04);
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.luxury-card-light:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 20px 35px -8px rgba(6, 35, 23, 0.1);
+}
+
+.luxury-card-dark {
+  background: rgba(6, 35, 23, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.35);
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.luxury-card-dark:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 20px 45px -5px rgba(0, 0, 0, 0.45), 0 0 20px rgba(212, 175, 55, 0.15);
+}
+

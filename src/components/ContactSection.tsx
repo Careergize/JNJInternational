@@ -37,17 +37,17 @@ export const ContactSection: React.FC = () => {
   }
 
   return (
-    <section id="contact" className="py-24 bg-[#f4f7f1] relative overflow-hidden">
+    <section id="contact" className="py-24 bg-[#f8faf5] relative overflow-hidden border-t border-[#d4af37]/20">
       {/* Background ambient decorative orb */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-emerald-100/50 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-emerald-100/40 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <ScrollReveal variant="fade-down" delay={50}>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-[#0b3d26] text-xs font-semibold uppercase tracking-wider mb-3 shadow-xs">
-              <Phone className="size-3.5 text-[#d4af37]" />
-              Direct Export &amp; Wholesale Desk
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052216]/10 border border-[#d4af37]/40 text-[#073822] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <span className="size-1.5 rounded-full bg-[#d4af37]"></span>
+              <span>Direct Export &amp; Wholesale Desk</span>
             </div>
           </ScrollReveal>
 
@@ -76,7 +76,7 @@ export const ContactSection: React.FC = () => {
               href="https://wa.me/917994561627?text=Hello%20JNJ%20International%2C%20I%20would%20like%20to%20enquire%20about%20vegetable%20export%20prices."
               target="_blank"
               rel="noopener noreferrer"
-              className="extice-card bg-white p-6 rounded-2xl border border-emerald-900/10 shadow-sm flex flex-col justify-between group h-full cursor-pointer"
+              className="luxury-card-light p-6 rounded-2xl flex flex-col justify-between group h-full cursor-pointer"
             >
               <div>
                 <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -99,7 +99,7 @@ export const ContactSection: React.FC = () => {
 
           {/* Card 2: Phone Calling */}
           <ScrollReveal variant="fade-up" delay={180} className="h-full">
-            <div className="extice-card bg-white p-6 rounded-2xl border border-emerald-900/10 shadow-sm flex flex-col justify-between group h-full">
+            <div className="luxury-card-light p-6 rounded-2xl flex flex-col justify-between group h-full">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Phone className="size-6 text-emerald-600" />
@@ -127,7 +127,7 @@ export const ContactSection: React.FC = () => {
           <ScrollReveal variant="fade-up" delay={260} className="h-full">
             <a
               href="mailto:jnj.internationalpvt@gmail.com?subject=Vegetable%20Export%20Enquiry%20-%20JNJ%20International"
-              className="extice-card bg-white p-6 rounded-2xl border border-emerald-900/10 shadow-sm flex flex-col justify-between group h-full cursor-pointer"
+              className="luxury-card-light p-6 rounded-2xl flex flex-col justify-between group h-full cursor-pointer"
             >
               <div>
                 <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -150,7 +150,7 @@ export const ContactSection: React.FC = () => {
 
           {/* Card 4: Registered Office */}
           <ScrollReveal variant="fade-up" delay={340} className="h-full">
-            <div className="extice-card bg-white p-6 rounded-2xl border border-emerald-900/10 shadow-sm flex flex-col justify-between group h-full">
+            <div className="luxury-card-light p-6 rounded-2xl flex flex-col justify-between group h-full">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 mb-4 group-hover:scale-110 transition-transform duration-300">
                   <MapPin className="size-6 text-emerald-600" />
@@ -177,7 +177,7 @@ export const ContactSection: React.FC = () => {
           {/* Left: Interactive Form */}
           <div className="lg:col-span-7">
             <ScrollReveal variant="fade-right" delay={200}>
-              <div className="extice-card bg-white p-6 sm:p-8 rounded-3xl border border-emerald-900/10 shadow-lg">
+              <div className="luxury-card-light p-6 sm:p-8 rounded-3xl">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Send an Instant Consignment Message</h3>
                 <p className="text-xs text-slate-600 mb-6">
                   Fill in your requirement below. Our export executive will respond with current port availability and CIF/FOB rates.
@@ -276,7 +276,7 @@ export const ContactSection: React.FC = () => {
 
                     <button
                       type="submit"
-                      className="extice-btn-primary btn-shimmer group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 text-xs font-bold text-[#051f14] bg-gradient-to-r from-[#f5d77f] via-[#d4af37] to-[#c59b27] rounded-full shadow-lg cursor-pointer"
+                      className="extice-btn-primary btn-shimmer group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 text-xs font-bold text-[#041a10] bg-gradient-to-r from-[#e5a83b] via-[#eaae42] to-[#d4af37] hover:brightness-105 rounded-full shadow-lg shadow-amber-500/25 cursor-pointer"
                     >
                       <Send className="size-3.5 transition-transform duration-300 group-hover:translate-x-1" />
                       <span>Send Message to Export Desk</span>
@@ -290,7 +290,7 @@ export const ContactSection: React.FC = () => {
           {/* Right: Operating Hours & Logistics Desk Notice */}
           <div className="lg:col-span-5 space-y-6">
             <ScrollReveal variant="fade-left" delay={250}>
-              <div className="extice-card bg-[#051f14] text-white p-6 sm:p-7 rounded-3xl border border-[#d4af37]/35 shadow-xl">
+              <div className="luxury-card-dark bg-gradient-to-br from-[#062417] to-[#03170e] text-white p-6 sm:p-7 rounded-3xl border border-[#d4af37]/35 shadow-xl">
                 <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#f5d77f] mb-3">
                   <Clock className="size-4" />
                   Export Desk Hours &amp; Reefer Support
@@ -320,7 +320,7 @@ export const ContactSection: React.FC = () => {
 
             {/* Quick Mandi & Maritime Port Reminder */}
             <ScrollReveal variant="fade-left" delay={350}>
-              <div className="extice-card bg-white p-6 rounded-3xl border border-emerald-900/10 shadow-sm text-xs text-slate-600 space-y-2">
+              <div className="luxury-card-light p-6 rounded-3xl text-xs text-slate-600 space-y-2">
                 <div className="font-bold text-slate-900 text-sm flex items-center gap-2">
                   <Building className="size-4 text-[#0d472d]" />
                   Visiting Our Thiruvananthapuram Office

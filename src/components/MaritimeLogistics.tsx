@@ -57,18 +57,19 @@ export const MaritimeLogistics: React.FC = () => {
   ]
 
   return (
-    <section id="logistics" className="py-24 bg-[#072519] text-white relative overflow-hidden">
+    <section id="logistics" className="py-24 bg-[#03150e] text-white relative overflow-hidden border-y border-[#d4af37]/25">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-10 w-96 h-96 bg-[#d4af37]/8 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 left-10 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-emerald-500/12 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <ScrollReveal variant="fade-down" delay={50}>
-            <span className="text-xs uppercase tracking-[0.2em] font-mono text-[#d4af37] font-semibold block mb-2">
-              Maritime Logistics
-            </span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-[#d4af37]/40 text-[#f5d77f] text-xs font-mono font-bold tracking-wider uppercase mb-3 shadow-sm">
+              <span className="size-1.5 rounded-full bg-emerald-400 animate-beacon"></span>
+              <span>Maritime Logistics &bull; Cold-Chain Corridors</span>
+            </div>
           </ScrollReveal>
 
           <ScrollReveal variant="fade-up" delay={150}>
@@ -91,9 +92,9 @@ export const MaritimeLogistics: React.FC = () => {
         {/* 3 Quick Maritime Counter Badges */}
         <ScrollReveal variant="fade-up" delay={300}>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-14">
-            <div className="glass-panel-dark p-4 rounded-2xl border border-[#d4af37]/30 flex items-center gap-4 extice-card">
-              <div className="size-12 rounded-xl bg-[#d4af37]/15 flex items-center justify-center text-[#f5d77f]">
-                <Ship className="size-6" />
+            <div className="luxury-card-dark bg-[#062417]/85 p-4 rounded-2xl border border-[#d4af37]/35 flex items-center gap-4">
+              <div className="size-12 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
+                <Ship className="size-6 text-[#f5d77f]" />
               </div>
               <div>
                 <div className="text-2xl font-extrabold font-mono text-[#f5d77f]">
@@ -103,9 +104,9 @@ export const MaritimeLogistics: React.FC = () => {
               </div>
             </div>
 
-            <div className="glass-panel-dark p-4 rounded-2xl border border-[#d4af37]/30 flex items-center gap-4 extice-card">
-              <div className="size-12 rounded-xl bg-[#d4af37]/15 flex items-center justify-center text-[#f5d77f]">
-                <Clock className="size-6" />
+            <div className="luxury-card-dark bg-[#062417]/85 p-4 rounded-2xl border border-[#d4af37]/35 flex items-center gap-4">
+              <div className="size-12 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
+                <Clock className="size-6 text-[#f5d77f]" />
               </div>
               <div>
                 <div className="text-2xl font-extrabold font-mono text-[#f5d77f]">
@@ -115,9 +116,9 @@ export const MaritimeLogistics: React.FC = () => {
               </div>
             </div>
 
-            <div className="glass-panel-dark p-4 rounded-2xl border border-[#d4af37]/30 flex items-center gap-4 extice-card">
-              <div className="size-12 rounded-xl bg-[#d4af37]/15 flex items-center justify-center text-[#f5d77f]">
-                <ThermometerSnowflake className="size-6" />
+            <div className="luxury-card-dark bg-[#062417]/85 p-4 rounded-2xl border border-[#d4af37]/35 flex items-center gap-4">
+              <div className="size-12 rounded-xl bg-[#0b3d26] text-[#f5d77f] border border-[#d4af37]/30 flex items-center justify-center shrink-0">
+                <ThermometerSnowflake className="size-6 text-[#f5d77f]" />
               </div>
               <div>
                 <div className="text-2xl font-extrabold font-mono text-[#f5d77f]">
@@ -225,7 +226,7 @@ export const MaritimeLogistics: React.FC = () => {
               {destinations.map((dest, idx) => (
                 <div
                   key={idx}
-                  className="extice-card p-4 rounded-xl bg-[#031c11]/80 border border-emerald-800/40 flex flex-col justify-between hover:border-[#d4af37]/50"
+                  className="luxury-card-dark p-4 rounded-xl border border-[#d4af37]/30 flex flex-col justify-between hover:border-[#d4af37]/65"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-2">
